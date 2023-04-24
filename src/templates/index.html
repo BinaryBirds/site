@@ -22,8 +22,6 @@
     
     <link rel="stylesheet" href="{baseUrl}css/style.css">
     <link rel="stylesheet" href="{baseUrl}css/syntax.css">
-    
-    <link rel="mask-icon" sizes="any" href="{baseUrl}images/icons/icon.svg">
 
     <link rel="shortcut icon" href="{baseUrl}images/icons/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="{baseUrl}images/icons/icon-320.png" type="image/png">
@@ -43,12 +41,20 @@
 <body>
     <header id="page-header">
         <a href="{baseUrl}">
-            <img 
-                id="logo-image"
-                src="{baseUrl}images/logos/logo.png"
-                alt="Logo of Binary Birds"
-                title="Binary Birds"
-            >
+            <figure>
+                <picture>
+                    <source 
+                        srcset="{baseUrl}images/logos/logo~dark.png" 
+                        media="(prefers-color-scheme: dark)"
+                    >
+                    <img 
+                        id="logo-image"
+                        src="{baseUrl}images/logos/logo.png"
+                        alt="Logo of Binary Birds"
+                        title="Binary Birds"
+                    >
+                </picture>
+            </figure>
         </a>
     </header>
     
@@ -60,17 +66,28 @@
 
     <footer>
         <section class="content-wrapper">
-            <img 
-                src="{baseUrl}images/logos/logo.png"
-                alt="Logo of Binary Birds"
-                title="Binary Birds"
-            >
+            <figure>
+                <picture>
+                    <source 
+                        srcset="{baseUrl}images/logos/logo~dark.png" 
+                        media="(prefers-color-scheme: dark)"
+                    >
+                    <img 
+                        id="logo-image"
+                        src="{baseUrl}images/logos/logo.png"
+                        alt="Logo of Binary Birds"
+                        title="Binary Birds"
+                    >
+                </picture>
+            </figure>
 
             <p>This site was generated using the <a href="https://swift.org/" target="_blank">Swift</a> programming language.</p>
             
             <p> 
                 <a href="https://binarybirds.com/">Home</a> ·
-                <a href="{baseUrl}">Blog</a> ·
+                <a href="mailto:binarybirdsofficial@gmail.com">Email</a> ·
+                <a href="https://github.com/binarybirds/">GitHub</a> ·
+                <a href="https://twitter.com/tiborbodecs">Twitter</a> ·
                 <a href="{baseUrl}rss.xml" target="_blank">RSS</a> ·
                 <a href="{baseUrl}sitemap.xml" target="_blank">Sitemap</a>
             </p>

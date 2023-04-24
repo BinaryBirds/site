@@ -2,19 +2,19 @@
 <channel>
     <title>Binary Birds</title>
     <description>Server-side Swift development and consulting. Secure, efficient, scalable solutions.</description>
-    <link>https://binarybirds.github.io/site/</link>
-    <language>Server-side Swift development and consulting. Secure, efficient, scalable solutions.</language>
-    <lastBuildDate>2023. Apr 19. 20:00:14 GMT+02:00</lastBuildDate>
-    <pubDate>2023-04-13 22:00:00 +0000</pubDate>
+    <link>/</link>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 24 Apr 2023 16:06:58 +0000</lastBuildDate>
+    <pubDate>Thu, 13 Apr 2023 22:00:00 +0000</pubDate>
     <ttl>250</ttl>
-    <atom:link href="https://binarybirds.github.io/site/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
 
     <item>
-       <guid isPermaLink="true">https://binarybirds.github.io/site/hello-world</guid>
+       <guid isPermaLink="true">/hello-world/</guid>
        <title><![CDATA[ Hello, World! ]]></title>
        <description><![CDATA[ The Binary Birds Blog is now live. ]]></description>
-       <link>https://binarybirds.github.io/site/hello-world</link>
-       <pubDate>2023. Apr 14. 0:00:00 GMT+02:00</pubDate>
+       <link>/hello-world/</link>
+       <pubDate>Thu, 13 Apr 2023 22:00:00 +0000</pubDate>
     </item>
 </channel>
 </rss>

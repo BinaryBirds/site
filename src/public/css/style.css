@@ -1,9 +1,9 @@
 :root {
     --scale: 1rem;
     --link-color: #FF6201;
-    --hover-link-color: #781A31;
-    --selected-link-color: #DD0398;
-    --active-link-color: #FF2451;
+    --hover-link-color: #AC4200;
+    --selected-link-color: #F0782D;
+    --active-link-color: #A64306;
     --primary-background-color: #fff;
     --secondary-background-color: #f5f5f5;
     --primary-text-color: #000;
@@ -19,9 +19,9 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --link-color: #FF6201;
-        --hover-link-color: #DE2451;
-        --selected-link-color: #DD0398;
-        --active-link-color: #FF2451;
+        --hover-link-color: #FF924F;
+        --selected-link-color: #AC4200;
+        --active-link-color: #A64306;
         --primary-background-color: #000;
         --secondary-background-color: #1a1a1a;
         --primary-text-color: #fff;
@@ -216,7 +216,6 @@ figure, picture, img {
 }
 figure picture img {
     width: 100%;
-    margin-top: 1.5rem;
 }
 time {
     text-transform: uppercase;
@@ -267,7 +266,7 @@ a.button:hover {
 #post-header {
     margin-bottom: 2rem;
 }
-#contents, #share, #book, #author {
+#contents {
     margin: 3rem auto;
 }
 #post-image {
@@ -278,71 +277,9 @@ a.button:hover {
 #logo-image {
     width: 80px;
 }
-#book {
-    background: var(--primary-background-color);
-    border: 4px solid #DE2451;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22);
-    border-radius: 4px;
-    margin: 4rem auto;
-    display: flex;
-    flex-direction: column;
-}
-#book .column {
-    padding: 1rem;
-}
-#book img {
-    border: 1px solid var(--border-color);
-}
-@media screen and (min-width: 480px) {
-    #book {
-        flex-direction: row;
-    }
-    #book .left {
-        width: 30%;
-    }
-    #book .right {
-        width: 70%;
-    }
-}
-#book img {
-    width: 100%;
-}
-#book p  {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-#author {
-    text-align: center;
-    margin-top: 4rem;
-}
-#author p {
-    font-size: 1.25rem;
-}
-#author p.title {
-    margin: 0;
-    
-}
-#author p.bio {
-    margin-bottom: 0.5rem;
-}
-#author .links a {
-    margin: 0 0.25rem;
-}
-#author-image {
-    width: 128px;
-    border-radius: 64px;
-}
 #posts header {
     text-align: center;
     margin-bottom: 5rem;
-}
-#posts header h1 {
-    opacity: 0.2;
-    transition: 0.3s;
-}
-#posts header h1:hover {
-    opacity: 1;
-    cursor: pointer;
 }
 #posts .post {
     border-radius: 4px;
@@ -368,77 +305,5 @@ a.button:hover {
 @media screen and (min-width: 800px) {
     #posts .grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.ribbon {
-    z-index: 999;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    right: 2rem;
-    padding: 10px 0;
-    width: 32px;
-    height: 24px;
-    text-align: center;
-    color: white;
-    background: #C9264F;
-    font-size: 1rem;
-    transition: height 0.2s ease;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 32px 55px,
-                rgba(0, 0, 0, 0.12) 0px -12px 30px,
-                rgba(0, 0, 0, 0.12) 0px 4px 6px,
-                rgba(0, 0, 0, 0.17) 0px 12px 13px,
-                rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.ribbon::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 100%;
-    height: 0;
-    width: 0;
-    border-left: 16px solid #C9264F;
-    border-right: 16px solid #C9264F;
-    border-bottom: 12px solid transparent;
-}
-.ribbon:hover {
-    cursor: pointer;
-    height: 32px;
-}
-@media screen and (min-width: 600px) {
-    .ribbon {
-        width: 48px;
-        height: 48px;
-        right: 3rem;
-        transition: height 0.3s ease;
-    }
-    .ribbon::after {
-        border-left: 24px solid #C9264F;
-        border-right: 24px solid #C9264F;
-        border-bottom: 16px solid transparent;
-    }
-    .ribbon:hover {
-        cursor: pointer;
-        height: 56px;
-    }
-}
-@media screen and (min-width: 800px) {
-    .ribbon {
-        width: 64px;
-        height: 64px;
-        right: 4rem;
-        transition: height 0.4s ease;
-    }
-    .ribbon::after {
-        border-left: 32px solid #C9264F;
-        border-right: 32px solid #C9264F;
-        border-bottom: 24px solid transparent;
-    }
-    .ribbon:hover {
-        cursor: pointer;
-        height: 80px;
     }
 }
