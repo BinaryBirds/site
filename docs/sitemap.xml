@@ -1,10 +1,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://binarybirds.github.io/site/hello-world</loc>
-        <lastmod>2023-04-19</lastmod>
-    </url>
-    <url>
-        <loc>https://binarybirds.github.io/site/about</loc>
-        <lastmod>2023-04-12</lastmod>
+        <loc>https://binarybirds.com/static-site-generation-with-the-power-of-swift-and-toucan/</loc>
+        <lastmod>2023-04-24</lastmod>
     </url>
 </urlset>

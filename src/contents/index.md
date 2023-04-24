@@ -1,5 +1,8 @@
 ---
-baseUrl: https://binarybirds.github.io/site/
+baseUrl: https://binarybirds.com/
+localBaseUrl: ./
+serveBaseUrl: /
+betaBaseUrl: https://binarybirds.github.io/site/
 language: en-US
 title: Binary Birds
 description: Server-side Swift development and consulting. Secure, efficient, scalable solutions.
