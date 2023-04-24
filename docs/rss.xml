@@ -4,17 +4,17 @@
     <description>Server-side Swift development and consulting. Secure, efficient, scalable solutions.</description>
     <link>/</link>
     <language>en-US</language>
-    <lastBuildDate>Mon, 24 Apr 2023 16:06:58 +0000</lastBuildDate>
-    <pubDate>Thu, 13 Apr 2023 22:00:00 +0000</pubDate>
+    <lastBuildDate>Mon, 24 Apr 2023 17:29:39 +0000</lastBuildDate>
+    <pubDate>Sun, 23 Apr 2023 22:00:00 +0000</pubDate>
     <ttl>250</ttl>
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
 
     <item>
-       <guid isPermaLink="true">/hello-world/</guid>
-       <title><![CDATA[ Hello, World! ]]></title>
-       <description><![CDATA[ The Binary Birds Blog is now live. ]]></description>
-       <link>/hello-world/</link>
-       <pubDate>Thu, 13 Apr 2023 22:00:00 +0000</pubDate>
+       <guid isPermaLink="true">/static-site-generation-with-the-power-of-swift-and-toucan/</guid>
+       <title><![CDATA[ Static site geneneration with the power of Swift and Toucan ]]></title>
+       <description><![CDATA[ Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it. ]]></description>
+       <link>/static-site-generation-with-the-power-of-swift-and-toucan/</link>
+       <pubDate>Sun, 23 Apr 2023 22:00:00 +0000</pubDate>
     </item>
 </channel>
 </rss>
