@@ -2,18 +2,18 @@
 <channel>
     <title>Binary Birds</title>
     <description>Server-side Swift development and consulting. Secure, efficient, scalable solutions.</description>
-    <link>/</link>
+    <link>https://binarybirds.com/</link>
     <language>en-US</language>
-    <lastBuildDate>Mon, 24 Apr 2023 17:29:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Apr 2023 17:32:36 +0000</lastBuildDate>
     <pubDate>Sun, 23 Apr 2023 22:00:00 +0000</pubDate>
     <ttl>250</ttl>
-    <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://binarybirds.com/rss.xml" rel="self" type="application/rss+xml"/>
 
     <item>
-       <guid isPermaLink="true">/static-site-generation-with-the-power-of-swift-and-toucan/</guid>
+       <guid isPermaLink="true">https://binarybirds.com/static-site-generation-with-the-power-of-swift-and-toucan/</guid>
        <title><![CDATA[ Static site geneneration with the power of Swift and Toucan ]]></title>
        <description><![CDATA[ Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it. ]]></description>
-       <link>/static-site-generation-with-the-power-of-swift-and-toucan/</link>
+       <link>https://binarybirds.com/static-site-generation-with-the-power-of-swift-and-toucan/</link>
        <pubDate>Sun, 23 Apr 2023 22:00:00 +0000</pubDate>
     </item>
 </channel>

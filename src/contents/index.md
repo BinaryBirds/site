@@ -1,5 +1,5 @@
 ---
-baseUrl: /
+baseUrl: https://binarybirds.com/
 localBaseUrl: ./
 serveBaseUrl: /
 betaBaseUrl: https://binarybirds.github.io/site/
