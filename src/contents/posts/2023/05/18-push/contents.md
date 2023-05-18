@@ -1,7 +1,7 @@
 ---
 slug: push-notifications-with-swift-server-side
-title: Push notifications with Swift server side in 2023
-description: Looking around options for Push notifications with Swift server side.
+title: Sending push notifications using server side Swift in 2023
+description: Learn how to send push notifications with Swift on the server side using the Google FCM API and the APN Swift library.
 date: 2023/05/18
 tags: Swift, Push notification
 ---

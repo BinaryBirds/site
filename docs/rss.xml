@@ -4,15 +4,15 @@
     <description>Server-side Swift development and consulting. Secure, efficient, scalable solutions.</description>
     <link>https://binarybirds.com/</link>
     <language>en-US</language>
-    <lastBuildDate>Thu, 18 May 2023 08:19:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 May 2023 09:03:41 +0000</lastBuildDate>
     <pubDate>Wed, 17 May 2023 22:00:00 +0000</pubDate>
     <ttl>250</ttl>
     <atom:link href="https://binarybirds.com/rss.xml" rel="self" type="application/rss+xml"/>
 
     <item>
        <guid isPermaLink="true">https://binarybirds.com/push-notifications-with-swift-server-side/</guid>
-       <title><![CDATA[ Push notifications with Swift server side in 2023 ]]></title>
-       <description><![CDATA[ Looking around options for Push notifications with Swift server side. ]]></description>
+       <title><![CDATA[ Sending push notifications using server side Swift in 2023 ]]></title>
+       <description><![CDATA[ Learn how to send push notifications with Swift on the server side using the Google FCM API and the APN Swift library. ]]></description>
        <link>https://binarybirds.com/push-notifications-with-swift-server-side/</link>
        <pubDate>Wed, 17 May 2023 22:00:00 +0000</pubDate>
     </item>
