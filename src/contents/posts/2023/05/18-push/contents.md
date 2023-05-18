@@ -24,7 +24,7 @@ The very first step is to setup a Firebase project and download the service acco
 For Android applications, you need to add a new [app](https://firebase.google.com/docs/android/setup) to the firebase project, download Google-Services.json, and add this JSON to your Android project. Set up your project so you can receive push notifications.
 
 ### Step 3, Firebase add iOS application
-For iOS applications, you need to add a new [app] (https://firebase.google.com/docs/ios/setup) to the firebase project, download GoogleService-Info.plist, and add this file to your Xcode project. Set up your project so you can receive push notifications.
+For iOS applications, you need to add a new [app](https://firebase.google.com/docs/ios/setup) to the firebase project, download GoogleService-Info.plist, and add this file to your Xcode project. Set up your project so you can receive push notifications.
 
 ### Step 4, Firebase extra setup for iOS application
 For iOS applications, you have two options to setup your application with [APNS](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns):
@@ -41,7 +41,7 @@ For iOS applications, you have two options to setup your application with [APNS]
 Google has server environments called [Firebase Admin SDK](https://firebase.google.com/docs/cloud-messaging/server), but sadly not for Swift. There are several [protocols](https://firebase.google.com/docs/cloud-messaging/server#choose) we can use; we cover briefly the [FCM HTTP v1 API](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages) protocol, where we send JSON messages as HTTP POST.
 A good starting point is the [Google library](https://github.com/googleapis/google-auth-library-swift), which we can use, but you can implement your own solution too, depending on what you prefer.
 
-```
+```swift
 import Foundation
 import Dispatch
 import OAuth2
@@ -75,7 +75,7 @@ There are options for how you want to [send messages](https://firebase.google.co
 #### Send messages to specific devices:
 A good practice is to save device tokens into a database on the server side so they are easily accessible. Register/unregister logic needs to be implemented for both client app instances.
 
-```
+```curl
 POST https://fcm.googleapis.com/v1/projects/myproject-b5ae1/messages:send HTTP/1.1
 
 Content-Type: application/json
@@ -94,7 +94,7 @@ Authorization: Bearer ya29.ElqKBGN2Ri_Uz...HnS_uNreA
 #### Send messages to multiple devices
 We have a send limit here; you can specify up to 500 device registration tokens per invocation. You will need to add extra logic to your server-side logic here to handle the 500 limit. Construct an HTTP batch request and send it:
 
-```
+```curl
 --subrequest_boundary
 Content-Type: application/http
 Content-Transfer-Encoding: binary
@@ -140,7 +140,7 @@ send byte data to https://fcm.googleapis.com/batch
 #### Send messages to topics
 After you have created a topic by subscribing client app instances to the topic on the client side (you need to implement this register/unregister logic into your mobile applications), you can send messages to the topic. In this case, no device tokens are needed to send out push messages, so you don't need to store device tokens on the server side.
 
-```
+```curl
 POST https://fcm.googleapis.com/v1/projects/myproject-b5ae1/messages:send HTTP/1.1
 
 Content-Type: application/json
@@ -162,7 +162,7 @@ Firebase Cloud Messaging (FCM) offers two main [messaging options](https://fireb
 #### Notification messages
 Notification messages, sometimes thought of as "display messages." These are handled by the FCM SDK automatically.
 
-```
+```curl
 {
   "message":{
     "token":"bk3RNwTe3H0:CI2k_HHwgIpoDKCIZvvDMExUdFQ3P1...",
@@ -177,7 +177,7 @@ Notification messages, sometimes thought of as "display messages." These are han
 #### Data messages
 Set the appropriate key with your custom key-value pairs to send a data payload to the client app. Data messages need to be handled by the client app.
 
-```
+```curl
 {
   "message":{
     "token":"bk3RNwTe3H0:CI2k_HHwgIpoDKCIZvvDMExUdFQ3P1...",
@@ -196,17 +196,17 @@ Apple Push Notification Service (APNS) is a messaging service provided by Apple 
 ### Step 1, Setup p8 or p12 file
 For iOS applications you have two options to setup your application with [APNS](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns):
 
-- [Token-based connection] (https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns), after successful setup, you will have these to use:
+- [Token-based connection](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns), after successful setup, you will have these to use:
  - APNs Auth Key (p8 file)
  - Key ID
  - Team ID
 
-- [Certificate-based connection] (https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_certificate-based_connection_to_apns), after successful setup, you will have an APNs Auth Key (p12 file), which you can use.
+- [Certificate-based connection](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_certificate-based_connection_to_apns), after successful setup, you will have an APNs Auth Key (p12 file), which you can use.
 
 ### Step 2, Server side
 There is an official, detailed [article](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server) to gather information, and there is also an [APNS library](https://github.com/swift-server-community/APNSwift) to start implementing server-side.
 
-```
+```swift
 import Foundation
 import APNSCore
 import APNS
@@ -296,7 +296,7 @@ You can use the [AWS Mobile SDK](https://docs.aws.amazon.com/AmazonS3/latest/use
 There is an official, detailed [API reference](https://docs.aws.amazon.com/sns/latest/api/actions-list.html) to start implementing server-side.
 Sample Publish Request
 
-```
+```curl
 https://sns.us-west-2.amazonaws.com/?Action=Publish
 &TargetArn=arn%3Aaws%3Asns%3Aus-west-2%3A803981987763%3Aendpoint%2FAPNS_SANDBOX%2Fpushapp%2F98e9ced9-f136-3893-9d60-776547eafebb
 &Message=%7B%22default%22%3A%22This+is+the+default+Message%22%2C%22APNS_SANDBOX%22%3A%22%7B+%5C%22aps%5C%22+%3A+%7B+%5C%22alert%5C%22+%3A+%5C%22You+have+got+email.%5C%22%2C+%5C%22badge%5C%22+%3A+9%2C%5C%22sound%5C%22+%3A%5C%22default%5C%22%7D%7D%22%7D
@@ -307,17 +307,15 @@ https://sns.us-west-2.amazonaws.com/?Action=Publish
 
 We have a couple options when we want to implement push notifications into server-side Swift. Which one should we choose? In most cases, it's your own preference, but let us help you choose with a couple simple questions:
 
-- You need push for only Apple devices?
+- You need push notifications for only Apple devices?
 
 **Use only APNS.**
 
-- You need Push for Android and Apple devices too?
-
- Firebase Cloud Messaging (FCM) is mandatory for Android; FCM handles APNS too.
+- You need push notifications for Android and Apple devices too? Firebase Cloud Messaging (FCM) is mandatory for Android, FCM handles APNS too.
  
- **Use FCM.**
+**Use FCM.**
 
-- You need push for Android and Apple devices, and you need other services like SMS messages too.
+- You need push notifications for Android and Apple devices, and you need other services like SMS messages too?
 
 **Use Amazon SNS.**
 
