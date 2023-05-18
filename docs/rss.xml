@@ -4,11 +4,18 @@
     <description>Server-side Swift development and consulting. Secure, efficient, scalable solutions.</description>
     <link>https://binarybirds.com/</link>
     <language>en-US</language>
-    <lastBuildDate>Mon, 24 Apr 2023 17:40:40 +0000</lastBuildDate>
-    <pubDate>Sun, 23 Apr 2023 22:00:00 +0000</pubDate>
+    <lastBuildDate>Thu, 18 May 2023 08:19:36 +0000</lastBuildDate>
+    <pubDate>Wed, 17 May 2023 22:00:00 +0000</pubDate>
     <ttl>250</ttl>
     <atom:link href="https://binarybirds.com/rss.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+       <guid isPermaLink="true">https://binarybirds.com/push-notifications-with-swift-server-side/</guid>
+       <title><![CDATA[ Push notifications with Swift server side in 2023 ]]></title>
+       <description><![CDATA[ Looking around options for Push notifications with Swift server side. ]]></description>
+       <link>https://binarybirds.com/push-notifications-with-swift-server-side/</link>
+       <pubDate>Wed, 17 May 2023 22:00:00 +0000</pubDate>
+    </item>
     <item>
        <guid isPermaLink="true">https://binarybirds.com/static-site-generation-with-the-power-of-swift-and-toucan/</guid>
        <title><![CDATA[ Static site geneneration with the power of Swift and Toucan ]]></title>
