@@ -4,11 +4,18 @@
     <description>Server-side Swift development and consulting. Secure, efficient, scalable solutions.</description>
     <link>https://binarybirds.com/</link>
     <language>en-US</language>
-    <lastBuildDate>Thu, 18 May 2023 12:12:11 +0000</lastBuildDate>
-    <pubDate>Wed, 17 May 2023 22:00:00 +0000</pubDate>
+    <lastBuildDate>Wed, 07 Jun 2023 18:16:24 +0000</lastBuildDate>
+    <pubDate>Tue, 06 Jun 2023 22:00:00 +0000</pubDate>
     <ttl>250</ttl>
     <atom:link href="https://binarybirds.com/rss.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+       <guid isPermaLink="true">https://binarybirds.com/beginners-guide-to-swift-macros/</guid>
+       <title><![CDATA[ Beginner's guide to Swift macros ]]></title>
+       <description><![CDATA[ Learn how to create and publish your very first macro using SPM and the brand new Macro APIs introduced in Swift 5.9. ]]></description>
+       <link>https://binarybirds.com/beginners-guide-to-swift-macros/</link>
+       <pubDate>Tue, 06 Jun 2023 22:00:00 +0000</pubDate>
+    </item>
     <item>
        <guid isPermaLink="true">https://binarybirds.com/push-notifications-with-swift-server-side/</guid>
        <title><![CDATA[ Sending push notifications using server side Swift in 2023 ]]></title>
