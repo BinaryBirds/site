@@ -1,14 +1,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+        <loc>https://binarybirds.com/how-to-write-openapi-specs-using-swift-and-openapi-kit/</loc>
+        <lastmod>2023-07-06</lastmod>
+    </url>
+    <url>
         <loc>https://binarybirds.com/beginners-guide-to-swift-macros/</loc>
-        <lastmod>2023-06-07</lastmod>
+        <lastmod>2023-06-10</lastmod>
     </url>
     <url>
         <loc>https://binarybirds.com/push-notifications-with-swift-server-side/</loc>
-        <lastmod>2023-06-07</lastmod>
+        <lastmod>2023-06-10</lastmod>
     </url>
     <url>
         <loc>https://binarybirds.com/static-site-generation-with-the-power-of-swift-and-toucan/</loc>
-        <lastmod>2023-04-24</lastmod>
+        <lastmod>2023-06-10</lastmod>
     </url>
 </urlset>

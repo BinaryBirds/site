@@ -4,11 +4,18 @@
     <description>Server-side Swift development and consulting. Secure, efficient, scalable solutions.</description>
     <link>https://binarybirds.com/</link>
     <language>en-US</language>
-    <lastBuildDate>Wed, 07 Jun 2023 18:16:24 +0000</lastBuildDate>
-    <pubDate>Tue, 06 Jun 2023 22:00:00 +0000</pubDate>
+    <lastBuildDate>Thu, 06 Jul 2023 17:34:16 +0000</lastBuildDate>
+    <pubDate>Wed, 05 Jul 2023 22:00:00 +0000</pubDate>
     <ttl>250</ttl>
     <atom:link href="https://binarybirds.com/rss.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+       <guid isPermaLink="true">https://binarybirds.com/how-to-write-openapi-specs-using-swift-and-openapi-kit/</guid>
+       <title><![CDATA[ How to write OpenAPI specs using Swift and OpenAPIKit? ]]></title>
+       <description><![CDATA[ In this tutorial I'll show you how to build OpenAPI 3.0+ specifications efficiently using Swift & OpenAPIKit. ]]></description>
+       <link>https://binarybirds.com/how-to-write-openapi-specs-using-swift-and-openapi-kit/</link>
+       <pubDate>Wed, 05 Jul 2023 22:00:00 +0000</pubDate>
+    </item>
     <item>
        <guid isPermaLink="true">https://binarybirds.com/beginners-guide-to-swift-macros/</guid>
        <title><![CDATA[ Beginner's guide to Swift macros ]]></title>
