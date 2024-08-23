@@ -1,0 +1,90 @@
+{{<html}}
+{{$main}}
+<div class="wrapper">
+<div class="article-with-toc">
+    <div>
+        <article>
+            <header>
+
+                <div class="meta">
+                    <time datetime="{{page.publication.html}}">{{page.publication.html}}</time>
+                    {{#page.readingTime}} &middot; <span class="reading-time">{{page.readingTime}} min read</span>{{/page.readingTime}}
+                </div>
+                
+                <h1>{{page.title}}</h1>
+                <p>{{page.description}}</p>
+            </header>
+
+            <section>
+                {{& page.contents}}
+            </section>
+            
+            
+        </article>
+    </div>
+    <div>
+        <aside>
+        {{#page.featured}}
+        <span class="featured">featured</span>
+        {{/page.featured}}
+
+        <div class="author-list">
+            {{#page.authors}}
+                <a href="{{permalink}}">
+                {{#imageUrl}}<img class="large rounded" src="{{imageUrl}}" alt="{{title}}">{{/imageUrl}}
+                </a>
+            {{/page.authors}}
+        </div>
+        <div class="tag-list">
+            {{#page.tags}}
+                <a href="{{permalink}}"><small>{{title}}</small></a>
+            {{/page.tags}}
+        </div>
+        {{> blocks.toc}}
+        </aside>
+    </div>
+</div>
+</div>
+
+<section class="primary">
+    <div class="wrapper">
+        {{#empty(page.related)}}
+        {{/empty(page.related)}}
+        {{^empty(page.related)}}
+        <h2>Related posts</h2>
+        <hr>
+        <div class="grid grid-221">
+            {{#page.related}}
+                {{> blog.blocks.post}}
+            {{/page.related}}
+        </div>
+        {{/empty(page.related)}}
+    </div>
+</section>
+
+<section class="book">
+  <div class="wrapper">
+      <header>
+          <h2>Swift on the server</h2>
+          <p>We specialize on server-side Swift development. <br>We offer a comprehensive book on the Vapor framework.</p>
+      </header>
+      <div class="grid grid-211">
+          <picture>
+            <img alt="Practical Server Side Swift Cover" src="{{site.baseUrl}}images/defaults/PSSScover.png"/>
+          </picture>
+          
+          <div class="info">
+            <h3>Practical Server-Side Swift</h3>
+            <p>Swift on the server is an amazing new opportunity to build fast, safe and scalable backend apps. Write your very first web-based application by using your favorite programming language. Learn how to build a modular blog engine using the latest version of the Vapor 4 framework. This book will help you to design and create modern APIs that'll allow you to share code between the server side and iOS. Start becoming a full-stack Swift developer.</p>
+            <p><a href="#">Download sample</a></p>
+            <p><a class="button" href="https://theswiftdev.gumroad.com/l/practical-server-side-swift" target="_blank">Available on Gumroad</a></p>
+          </div>
+      </div>
+      
+      
+    
+  </div>
+</section>
+
+{{/main}}
+{{/html}}

@@ -2,40 +2,41 @@
 <channel>
     <title>Binary Birds</title>
     <description>Server-side Swift development and consulting. Secure, efficient, scalable solutions.</description>
-    <link>https://binarybirds.com/</link>
+    <link>http://localhost:3000/</link>
     <language>en-US</language>
-    <lastBuildDate>Thu, 06 Jul 2023 17:34:16 +0000</lastBuildDate>
-    <pubDate>Wed, 05 Jul 2023 22:00:00 +0000</pubDate>
+    <lastBuildDate>Fri, 23 Aug 2024 19:57:01 +0000</lastBuildDate>
+    <pubDate>Thu, 06 Jul 2023 16:15:54 +0000</pubDate>
     <ttl>250</ttl>
-    <atom:link href="https://binarybirds.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
 
-    <item>
-       <guid isPermaLink="true">https://binarybirds.com/how-to-write-openapi-specs-using-swift-and-openapi-kit/</guid>
-       <title><![CDATA[ How to write OpenAPI specs using Swift and OpenAPIKit? ]]></title>
-       <description><![CDATA[ In this tutorial I'll show you how to build OpenAPI 3.0+ specifications efficiently using Swift & OpenAPIKit. ]]></description>
-       <link>https://binarybirds.com/how-to-write-openapi-specs-using-swift-and-openapi-kit/</link>
-       <pubDate>Wed, 05 Jul 2023 22:00:00 +0000</pubDate>
-    </item>
-    <item>
-       <guid isPermaLink="true">https://binarybirds.com/beginners-guide-to-swift-macros/</guid>
-       <title><![CDATA[ Beginner's guide to Swift macros ]]></title>
-       <description><![CDATA[ Learn how to create and publish your very first macro using SPM and the brand new Macro APIs introduced in Swift 5.9. ]]></description>
-       <link>https://binarybirds.com/beginners-guide-to-swift-macros/</link>
-       <pubDate>Tue, 06 Jun 2023 22:00:00 +0000</pubDate>
-    </item>
-    <item>
-       <guid isPermaLink="true">https://binarybirds.com/push-notifications-with-swift-server-side/</guid>
-       <title><![CDATA[ Sending push notifications using server side Swift in 2023 ]]></title>
-       <description><![CDATA[ Learn how to send push notifications with Swift on the server side using the Google FCM API and the APN Swift library. ]]></description>
-       <link>https://binarybirds.com/push-notifications-with-swift-server-side/</link>
-       <pubDate>Wed, 17 May 2023 22:00:00 +0000</pubDate>
-    </item>
-    <item>
-       <guid isPermaLink="true">https://binarybirds.com/static-site-generation-with-the-power-of-swift-and-toucan/</guid>
-       <title><![CDATA[ Static site geneneration with the power of Swift and Toucan ]]></title>
-       <description><![CDATA[ Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it. ]]></description>
-       <link>https://binarybirds.com/static-site-generation-with-the-power-of-swift-and-toucan/</link>
-       <pubDate>Sun, 23 Apr 2023 22:00:00 +0000</pubDate>
-    </item>
+<item>
+    <guid isPermaLink="true">http://localhost:3000/blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit/</guid>
+    <title><![CDATA[ How to write OpenAPI specs using Swift and OpenAPIKit? ]]></title>
+    <description><![CDATA[ In this tutorial I&#39;ll show you how to build OpenAPI 3.0+ specifications efficiently using Swift &amp; OpenAPIKit. ]]></description>
+    <link>http://localhost:3000/blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit/</link>
+    <pubDate>Thu, 06 Jul 2023 16:15:54 +0000</pubDate>
+</item>
+<item>
+    <guid isPermaLink="true">http://localhost:3000/blog/posts/beginners-guide-to-swift-macros/</guid>
+    <title><![CDATA[ Beginner&#39;s guide to Swift macros ]]></title>
+    <description><![CDATA[ Learn how to create and publish your very first macro using SPM and the brand new Macro APIs introduced in Swift 5.9. ]]></description>
+    <link>http://localhost:3000/blog/posts/beginners-guide-to-swift-macros/</link>
+    <pubDate>Wed, 07 Jun 2023 14:57:12 +0000</pubDate>
+</item>
+<item>
+    <guid isPermaLink="true">http://localhost:3000/blog/posts/push-notifications-with-swift-server-side/</guid>
+    <title><![CDATA[ Sending push notifications using server side Swift in 2023 ]]></title>
+    <description><![CDATA[ Learn how to send push notifications with Swift on the server side using the Google FCM API and the APN Swift library. ]]></description>
+    <link>http://localhost:3000/blog/posts/push-notifications-with-swift-server-side/</link>
+    <pubDate>Thu, 18 May 2023 17:36:12 +0000</pubDate>
+</item>
+<item>
+    <guid isPermaLink="true">http://localhost:3000/blog/posts/static-site-generation-with-the-power-of-swift-and-toucan/</guid>
+    <title><![CDATA[ Static site geneneration with the power of Swift and Toucan ]]></title>
+    <description><![CDATA[ Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it. ]]></description>
+    <link>http://localhost:3000/blog/posts/static-site-generation-with-the-power-of-swift-and-toucan/</link>
+    <pubDate>Mon, 24 Apr 2023 18:32:25 +0000</pubDate>
+</item>
+
 </channel>
 </rss>
