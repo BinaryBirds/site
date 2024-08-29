@@ -70,7 +70,7 @@ main > section header, .hero {
     text-align: center;
 }
 main > section .wrapper {
-    padding: 60px 15px 120px 15px;
+    padding: 60px 15px 60px 15px;
 }
 main > section header {
     margin-bottom: 60px;
