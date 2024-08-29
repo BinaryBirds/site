@@ -128,7 +128,7 @@ main > section header p {
 .card .meta {
     color: var(--text-color-2);
 }
-.card .featured {
+.featured {
     position: absolute;
     top: 18px;
     right: -10px;
@@ -145,7 +145,7 @@ main > section header p {
 .card .author-list {
     margin-bottom: 10px;
 }
-.card .tag-list a {
+.tag-list a {
     display: inline-block;
     background: var(--background-color-2);
     color: var(--text-color-2);
@@ -157,9 +157,18 @@ main > section header p {
     margin-bottom: 5px;
     margin-right: 5px;
 }
-.card .tag-list a:hover {
+.tag-list a:hover {
     background: var(--link-color);
     color: #fff;
+}
+aside .author-list {
+    text-align: left;
+}
+aside .author-list h3 {
+    margin-top: 10px;
+}
+aside .tag-list {
+    margin: 15px 0;
 }
 section .card {
     background: var(--background-color);
