@@ -4,17 +4,23 @@
     text-align: center;
 }
 #footer-container img {
-    width: 64px;
+    width: 60px;
 }
+
+#footer-container svg {
+    width: 60px;
+    color: var(--link-color);
+}
+
 #footer-container footer nav ul {
     margin: 0;
     padding: 0;
 }
 #footer-container footer nav li {
-    display: inline-block;
+    display: block;
     padding: 2px 0;
     margin: 0;
-    margin-right: 30px;
+    text-align: center;
 }
 
 #footer-container footer nav li:last-child {
@@ -31,6 +37,7 @@
     border-top: 1px solid var(--background-color-1);
     margin: 10px 0;
     padding: 10px 0;
+    text-align: center;
 }
 
 @media screen and (min-width: 900px) {
@@ -39,5 +46,13 @@
     }
     #footer-container footer .links {
         text-align: right;
+    }
+    #footer-container #copyright {
+        text-align: right;
+    }
+    #footer-container footer nav li {
+        display: inline-block;
+        margin-right: 30px;
+        text-align: left;
     }
 }

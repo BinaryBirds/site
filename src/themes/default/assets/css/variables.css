@@ -1,17 +1,4 @@
 :root {
-    --primary-color-50: #edeeff;
-    --primary-color-100: #dfe0ff;
-    --primary-color-200: #c5c6ff;
-    --primary-color-300: #a3a1ff;
-    --primary-color-400: #8f82fd;
-    --primary-color-500: #795df7;
-    --primary-color-600: #6b3fec;
-    --primary-color-700: #5d32d0;
-    --primary-color-800: #4c2ba8;
-    --primary-color-900: #402b84;
-    --primary-color-950: #26194d;
-    
-
     --link-color: #5856d7;
     --link-color-visited: #5856d7;
     --link-color-hover: #302ea9;

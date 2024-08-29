@@ -82,8 +82,8 @@ main > section header {
 main > section header h2 {
     display: inline-block;
 /*    color: var(--link-color);*/
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2rem;
+    line-height: 3rem;
     border-bottom: 4px solid var(--link-color);
 }
 main > section h3 {
@@ -91,24 +91,24 @@ main > section h3 {
     margin-top: 10px;
 }
 main > section header p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 2rem;
     color: var(--text-color-2);
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .hero {
-    padding: 60px 0;
+    padding: 0px 0;
 }
 .hero img {
-    width: 96px;
-    margin-bottom: 15px;
-}
-.hero h1 {
-    font-size: 4rem;
-    line-height: 5rem;
+    width: 45px;
+    height: 45px;
 }
 .hero p {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
     font-weight: 600;
     color: var(--text-color-2);
 }
@@ -116,7 +116,6 @@ main > section header p {
     position: relative;
     padding: 15px;
     border-radius: 10px;
-    background-color: var(--background-color-1);
     border: 1px solid var(--background-color-2);
 }
 .card.post h3 {
@@ -162,11 +161,45 @@ main > section header p {
     background: var(--link-color);
     color: #fff;
 }
+section .card {
+    background: var(--background-color);
+}
+section.primary .card {
+    background: var(--background-color-1);
+}
 
-.services svg {
-    width: 44px;
-    height: 44px;
+header svg, .card svg {
+    width: 45px;
+    height: 45px;
     color: var(--link-color);
+}
+
+svg.illustration {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 128px;
+    height: 128px;
+    color: var(--link-color);
+}
+.devicon {
+    display: block;
+    text-align: center; 
+    font-size: 128px; 
+    color: var(--link-color); 
+}
+p.primary {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.competences > h3 {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.competences .card p {
+    margin-bottom: 0;
 }
 
 .book picture {

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="canonical" href="http://localhost:3000/blog/posts/push-notifications-with-swift-server-side/">
-    <link rel="prev" href="[&quot;publication&quot;: ToucanSDK.PageBundle.Context.DateValue(html: &quot;2023.07.06. 16:15&quot;, rss: &quot;Thu, 06 Jul 2023 16:15:54 +0000&quot;, sitemap: &quot;2023-07-06&quot;), &quot;css&quot;: [], &quot;imageUrl&quot;: false, &quot;description&quot;: &quot;In this tutorial I\&#39;ll show you how to build OpenAPI 3.0+ specifications efficiently using Swift &amp; OpenAPIKit.&quot;, &quot;lastModification&quot;: ToucanSDK.PageBundle.Context.DateValue(html: &quot;2024.08.09. 07:24&quot;, rss: &quot;Fri, 09 Aug 2024 07:24:23 +0000&quot;, sitemap: &quot;2024-08-09&quot;), &quot;hreflang&quot;: [], &quot;js&quot;: [], &quot;canonical&quot;: &quot;http://localhost:3000/blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit/&quot;, &quot;permalink&quot;: &quot;http://localhost:3000/blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit/&quot;, &quot;noindex&quot;: false, &quot;title&quot;: &quot;How to write OpenAPI specs using Swift and OpenAPIKit?&quot;, &quot;slug&quot;: &quot;blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit&quot;, &quot;expiration&quot;: false]">
-    <link rel="next" href="[&quot;slug&quot;: &quot;blog/posts/static-site-generation-with-the-power-of-swift-and-toucan&quot;, &quot;permalink&quot;: &quot;http://localhost:3000/blog/posts/static-site-generation-with-the-power-of-swift-and-toucan/&quot;, &quot;description&quot;: &quot;Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it.&quot;, &quot;canonical&quot;: &quot;http://localhost:3000/blog/posts/static-site-generation-with-the-power-of-swift-and-toucan/&quot;, &quot;publication&quot;: ToucanSDK.PageBundle.Context.DateValue(html: &quot;2023.04.24. 18:32&quot;, rss: &quot;Mon, 24 Apr 2023 18:32:25 +0000&quot;, sitemap: &quot;2023-04-24&quot;), &quot;imageUrl&quot;: false, &quot;css&quot;: [], &quot;expiration&quot;: false, &quot;hreflang&quot;: [], &quot;js&quot;: [], &quot;noindex&quot;: false, &quot;lastModification&quot;: ToucanSDK.PageBundle.Context.DateValue(html: &quot;2024.08.09. 07:24&quot;, rss: &quot;Fri, 09 Aug 2024 07:24:37 +0000&quot;, sitemap: &quot;2024-08-09&quot;), &quot;title&quot;: &quot;Static site geneneration with the power of Swift and Toucan&quot;]">
+    <link rel="prev" href="[&quot;permalink&quot;: &quot;http://localhost:3000/blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit/&quot;, &quot;description&quot;: &quot;In this tutorial I\&#39;ll show you how to build OpenAPI 3.0+ specifications efficiently using Swift &amp; OpenAPIKit.&quot;, &quot;expiration&quot;: false, &quot;noindex&quot;: false, &quot;lastModification&quot;: ToucanSDK.PageBundle.Context.DateValue(html: &quot;2024.08.09. 07:24&quot;, rss: &quot;Fri, 09 Aug 2024 07:24:23 +0000&quot;, sitemap: &quot;2024-08-09&quot;), &quot;hreflang&quot;: [], &quot;imageUrl&quot;: false, &quot;title&quot;: &quot;How to write OpenAPI specs using Swift and OpenAPIKit?&quot;, &quot;publication&quot;: ToucanSDK.PageBundle.Context.DateValue(html: &quot;2023.07.06. 16:15&quot;, rss: &quot;Thu, 06 Jul 2023 16:15:54 +0000&quot;, sitemap: &quot;2023-07-06&quot;), &quot;slug&quot;: &quot;blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit&quot;, &quot;js&quot;: [], &quot;canonical&quot;: &quot;http://localhost:3000/blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit/&quot;, &quot;css&quot;: []]">
+    <link rel="next" href="[&quot;expiration&quot;: false, &quot;hreflang&quot;: [], &quot;noindex&quot;: false, &quot;lastModification&quot;: ToucanSDK.PageBundle.Context.DateValue(html: &quot;2024.08.09. 07:24&quot;, rss: &quot;Fri, 09 Aug 2024 07:24:37 +0000&quot;, sitemap: &quot;2024-08-09&quot;), &quot;css&quot;: [], &quot;publication&quot;: ToucanSDK.PageBundle.Context.DateValue(html: &quot;2023.04.24. 18:32&quot;, rss: &quot;Mon, 24 Apr 2023 18:32:25 +0000&quot;, sitemap: &quot;2023-04-24&quot;), &quot;imageUrl&quot;: false, &quot;description&quot;: &quot;Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it.&quot;, &quot;canonical&quot;: &quot;http://localhost:3000/blog/posts/static-site-generation-with-the-power-of-swift-and-toucan/&quot;, &quot;permalink&quot;: &quot;http://localhost:3000/blog/posts/static-site-generation-with-the-power-of-swift-and-toucan/&quot;, &quot;js&quot;: [], &quot;slug&quot;: &quot;blog/posts/static-site-generation-with-the-power-of-swift-and-toucan&quot;, &quot;title&quot;: &quot;Static site geneneration with the power of Swift and Toucan&quot;]">
     
     <title>Sending push notifications using server side Swift in 2023 - Binary Birds</title>
     <meta name="description" content="Learn how to send push notifications with Swift on the server side using the Google FCM API and the APN Swift library.">
@@ -25,7 +25,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     <link rel="stylesheet" href="http://localhost:3000/css/modern-normalize.css">
     <link rel="stylesheet" href="http://localhost:3000/css/modern-base.css">
@@ -301,7 +300,7 @@ try await client.sendAlertNotification(
         
                 <div class="author-list">
                         <a href="http://localhost:3000/blog/authors/gabor-lengyel/">
-                        <img class="large rounded" src="/assets/blog/authors/gabor-lengyel/gabor-lengyel.jpeg" alt="Gábor Lengyel">
+                        <img class="large rounded" src="/assets/blog/authors/gabor-lengyel/gabor-lengyel.png" alt="Gábor Lengyel">
                         </a>
                 </div>
                 <div class="tag-list">
@@ -456,35 +455,15 @@ try await client.sendAlertNotification(
                 </div>
                 <div class="links">
                     <div class="external">
-                        <a href="https://toucansites.com" target="_blank">
-                            <img
-                            src="http://localhost:3000/images/footer/toucan-logo.png"
-                            alt="Toucan Sites"
-                            />
-                        </a>
-                        <a href="https://theswiftdev.com" target="_blank">
-                            <img
-                            src="http://localhost:3000/images/footer/theswiftdev-logo.png"
-                            alt="The.Swift.Dev"
-                            />
-                        </a>
-                        <a href="https://feathercms.com" target="_blank">
-                            <img
-                            src="http://localhost:3000/images/footer/feather-logo.png"
-                            alt="Feather CMS"
-                            />
-                        </a>
-                        <a href="https://swiftonserver.com" target="_blank">
-                            <img
-                            src="http://localhost:3000/images/footer/swiftonserver-logo.png"
-                            alt="Swift on Server"
-                            />
-                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                        </svg>
                     </div>
                     <div class="contact">
                         <h3>Contact</h3>
                         <p>
-                        <a href="mailto:binarybirdsoffical@gmail.com">
+                        Binary Birds Kft.<br>
+                        <a href="mailto:info@binarybirds.com">
                             info@binarybirds.com
                         </a>
                         </p>
