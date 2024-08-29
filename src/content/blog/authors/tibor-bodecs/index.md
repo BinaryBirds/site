@@ -1,8 +1,7 @@
 ---
 type: author
 title: Tibor Bödecs
-description: Swift developer
+description: CEO, SSWG member
 image: ./assets/tibor-bodecs.jpeg
 ---
 
-Hello my name is Tib!
