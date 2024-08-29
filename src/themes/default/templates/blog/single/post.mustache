@@ -51,8 +51,9 @@
         {{#empty(page.related)}}
         {{/empty(page.related)}}
         {{^empty(page.related)}}
+        <header>
         <h2>Related posts</h2>
-        <hr>
+        </header>
         <div class="grid grid-221">
             {{#page.related}}
                 {{> blog.blocks.post}}

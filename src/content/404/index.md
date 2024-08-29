@@ -1,15 +1,18 @@
 ---
 title: Not found
 description: Page not found
+template: "404"
 ---
 
-This page does not exists.
+# 404
+
+Not found.
 
 ```swift
-func main() {
-    "Hello, world!"
+func notFound() -> Int {
+    return 404
 }
 ```
 
-ouch Something went wrong...
+This page does not exists.
 

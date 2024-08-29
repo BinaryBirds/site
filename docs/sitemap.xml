@@ -17,11 +17,11 @@
         <loc>http://localhost:3000/blog/authors/tibor-bodecs/</loc>
         <lastmod>2024-08-29</lastmod>
         <loc>http://localhost:3000/blog/tags/open-api/</loc>
-        <lastmod>2024-08-14</lastmod>
+        <lastmod>2024-08-29</lastmod>
         <loc>http://localhost:3000/blog/tags/product-updates/</loc>
-        <lastmod>2024-08-14</lastmod>
+        <lastmod>2024-08-29</lastmod>
         <loc>http://localhost:3000/blog/tags/swift/</loc>
-        <lastmod>2024-08-14</lastmod>
+        <lastmod>2024-08-29</lastmod>
         <loc>http://localhost:3000/consulting/</loc>
         <lastmod>2024-08-16</lastmod>
         <loc>http://localhost:3000/contact/</loc>
@@ -35,6 +35,6 @@
         <loc>http://localhost:3000/blog/posts/push-notifications-with-swift-server-side/</loc>
         <lastmod>2024-08-09</lastmod>
         <loc>http://localhost:3000/blog/posts/static-site-generation-with-the-power-of-swift-and-toucan/</loc>
-        <lastmod>2024-08-09</lastmod>
+        <lastmod>2024-08-29</lastmod>
     </url>
 </urlset>
