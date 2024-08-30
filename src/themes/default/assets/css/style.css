@@ -161,6 +161,18 @@ main > section header p {
     background: var(--link-color);
     color: #fff;
 }
+.card .links {
+    margin-bottom: 15px;
+}
+.card .links svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    color: var(--text-color-3);
+}
+.card .links svg:hover {
+    color: var(--link-color-hover);
+}
 aside .author-list {
     text-align: left;
 }
@@ -181,6 +193,50 @@ header svg, .card svg {
     width: 45px;
     height: 45px;
     color: var(--link-color);
+}
+
+.testimonial {
+    padding: 2rem 4rem;
+}
+
+.testimonial h3 {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.testimonial p {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+blockquote {
+    display: block;
+    position: relative;
+    
+}
+blockquote:before,
+blockquote:after {
+	position: absolute;
+    color: var(--text-color-3);
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -4rem;
+	top: 2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -4rem;
+	bottom: -5rem;
+}
+
+cite {
+	line-height: 3;
+	text-align: left;
 }
 
 svg.illustration {
@@ -296,8 +352,16 @@ p.primary {
     font-size: 0.8rem;
 }
 
-
+@media screen and (min-width: 600px) {
+    .testimonial-image {
+        padding: 2rem 0;
+    }
+}
 @media screen and (min-width: 900px) {
+
+    .testimonial-image {
+        padding: 0 4rem;
+    }
     
     .article-with-toc {
         display: grid;

@@ -2,13 +2,14 @@
 type: post
 title: How to write OpenAPI specs using Swift and OpenAPIKit?
 description: In this tutorial I'll show you how to build OpenAPI 3.0+ specifications efficiently using Swift & OpenAPIKit.
-image: ./how-to-write-openapi-specs-using-swift-and-openapi-kit/cover.jpg
 publication: 2023-07-06 16:15:54
 tags:
   - swift
   - open-api
 authors:
   - tibor-bodecs
+redirects:
+    - from: how-to-write-openapi-specs-using-swift-and-openapi-kit
 ---
 
 ## Getting started

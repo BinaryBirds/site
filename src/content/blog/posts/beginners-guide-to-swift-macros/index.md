@@ -2,13 +2,14 @@
 type: post
 title: Beginner's guide to Swift macros
 description: Learn how to create and publish your very first macro using SPM and the brand new Macro APIs introduced in Swift 5.9.
-image: ./beginners-guide-to-swift-macros/cover.jpg
 publication: 2023-06-07 14:57:12
 tags:
   - swift
 authors:
   - tibor-bodecs
 featured: true
+redirects:
+    - from: beginners-guide-to-swift-macros
 ---
 
 ## Getting started

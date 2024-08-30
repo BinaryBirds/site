@@ -1,40 +1,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:3000/</loc>
-        <lastmod>2024-08-13</lastmod>
-        <loc>http://localhost:3000/blog/</loc>
+        <loc>https://binarybirds.com/</loc>
+        <lastmod>2024-08-30</lastmod>
+        <loc>https://binarybirds.com/blog/</loc>
         <lastmod>2024-08-08</lastmod>
-        <loc>http://localhost:3000/blog/authors/andras-sipos/</loc>
+        <loc>https://binarybirds.com/blog/authors/andras-sipos/</loc>
+        <lastmod>2024-08-30</lastmod>
+        <loc>https://binarybirds.com/blog/authors/ferenc-viasz-kadi/</loc>
+        <lastmod>2024-08-30</lastmod>
+        <loc>https://binarybirds.com/blog/authors/gabor-lengyel/</loc>
+        <lastmod>2024-08-30</lastmod>
+        <loc>https://binarybirds.com/blog/authors/laszlo-kovacs/</loc>
+        <lastmod>2024-08-30</lastmod>
+        <loc>https://binarybirds.com/blog/authors/nandor-bereczki/</loc>
+        <lastmod>2024-08-30</lastmod>
+        <loc>https://binarybirds.com/blog/authors/tibor-bodecs/</loc>
+        <lastmod>2024-08-30</lastmod>
+        <loc>https://binarybirds.com/blog/tags/open-api/</loc>
         <lastmod>2024-08-29</lastmod>
-        <loc>http://localhost:3000/blog/authors/ferenc-viasz-kadi/</loc>
+        <loc>https://binarybirds.com/blog/tags/product-updates/</loc>
         <lastmod>2024-08-29</lastmod>
-        <loc>http://localhost:3000/blog/authors/gabor-lengyel/</loc>
+        <loc>https://binarybirds.com/blog/tags/swift/</loc>
         <lastmod>2024-08-29</lastmod>
-        <loc>http://localhost:3000/blog/authors/laszlo-kovacs/</loc>
-        <lastmod>2024-08-29</lastmod>
-        <loc>http://localhost:3000/blog/authors/nandor-bereczki/</loc>
-        <lastmod>2024-08-29</lastmod>
-        <loc>http://localhost:3000/blog/authors/tibor-bodecs/</loc>
-        <lastmod>2024-08-29</lastmod>
-        <loc>http://localhost:3000/blog/tags/open-api/</loc>
-        <lastmod>2024-08-29</lastmod>
-        <loc>http://localhost:3000/blog/tags/product-updates/</loc>
-        <lastmod>2024-08-29</lastmod>
-        <loc>http://localhost:3000/blog/tags/swift/</loc>
-        <lastmod>2024-08-29</lastmod>
-        <loc>http://localhost:3000/consulting/</loc>
+        <loc>https://binarybirds.com/consulting/</loc>
         <lastmod>2024-08-16</lastmod>
-        <loc>http://localhost:3000/contact/</loc>
+        <loc>https://binarybirds.com/contact/</loc>
         <lastmod>2024-08-16</lastmod>
-        <loc>http://localhost:3000/development/</loc>
+        <loc>https://binarybirds.com/development/</loc>
         <lastmod>2024-08-16</lastmod>
-        <loc>http://localhost:3000/blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit/</loc>
-        <lastmod>2024-08-09</lastmod>
-        <loc>http://localhost:3000/blog/posts/beginners-guide-to-swift-macros/</loc>
-        <lastmod>2024-08-14</lastmod>
-        <loc>http://localhost:3000/blog/posts/push-notifications-with-swift-server-side/</loc>
-        <lastmod>2024-08-09</lastmod>
-        <loc>http://localhost:3000/blog/posts/static-site-generation-with-the-power-of-swift-and-toucan/</loc>
-        <lastmod>2024-08-29</lastmod>
+        <loc>https://binarybirds.com/blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit/</loc>
+        <lastmod>2024-08-30</lastmod>
+        <loc>https://binarybirds.com/blog/posts/beginners-guide-to-swift-macros/</loc>
+        <lastmod>2024-08-30</lastmod>
+        <loc>https://binarybirds.com/blog/posts/push-notifications-with-swift-server-side/</loc>
+        <lastmod>2024-08-30</lastmod>
+        <loc>https://binarybirds.com/blog/posts/static-site-generation-with-the-power-of-swift-and-toucan/</loc>
+        <lastmod>2024-08-30</lastmod>
     </url>
 </urlset>

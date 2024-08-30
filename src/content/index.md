@@ -1,6 +1,6 @@
 ---
 title: Binary Birds
-description: Server-side swift solutions from experts. Secure, efficient, scalable solutions.
-image: images/defaults/default.png
+description: "Swift application development and consulting. Secure, efficient, scalable solutions."
+image: images/default.png
 template: index
 ---
