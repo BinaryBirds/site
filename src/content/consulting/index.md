@@ -1,5 +1,6 @@
 ---
-title: Binary Birds Consulting
-description: This is the Binary Birds team consulting page
+title: Consulting
+description: "We offer a wide variety of consultancy services, including product management, project management, and training courses."
+image: /images/default.png
 template: consulting
 ---

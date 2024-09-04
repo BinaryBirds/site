@@ -1,5 +1,6 @@
 ---
-title: Binary Birds Development
-description: This is the Binary Birds team development page
+title: Development
+description: "We create full scale products from backend systems to native apps for Apple platforms, Android and the web."
+image: /images/default.png
 template: development
 ---
