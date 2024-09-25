@@ -23,10 +23,9 @@
                     </svg>
                 </label>
                 <div class="menu-items">
-                    <a href="/development/">Development</a>
-                    <a href="/consulting/">Consulting</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="/contact/">Contact</a>
+                    {{#userDefined.navigation}}
+                    <a href="{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
+                    {{/userDefined.navigation}}
                 </div>
         </nav>
     </header>
