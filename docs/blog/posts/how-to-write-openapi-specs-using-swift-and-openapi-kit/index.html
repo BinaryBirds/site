@@ -26,29 +26,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
 
-    <link rel="stylesheet" href="https://binarybirds.com/css/modern-normalize.css">
-    <link rel="stylesheet" href="https://binarybirds.com/css/modern-base.css">
-    <link rel="stylesheet" href="https://binarybirds.com/css/variables.css">
-    <link rel="stylesheet" href="https://binarybirds.com/css/base.css">
-    <link rel="stylesheet" href="https://binarybirds.com/css/grid.css">
-    <link rel="stylesheet" href="https://binarybirds.com/css/navigation.css">
-    <link rel="stylesheet" href="https://binarybirds.com/css/footer.css">
-    <link rel="stylesheet" href="https://binarybirds.com/css/style.css">
+    <link rel="stylesheet" href="/css/modern-normalize.css">
+    <link rel="stylesheet" href="/css/modern-base.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     
     
-    <link rel="icon" href="https://binarybirds.com/icons/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="https://binarybirds.com/icons/icon-320.png" type="image/png">
+    <link rel="icon" href="/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/icons/icon-320.png" type="image/png">
     
-    <link rel="apple-touch-icon" href="https://binarybirds.com/icons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="https://binarybirds.com/icons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://binarybirds.com/icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://binarybirds.com/icons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://binarybirds.com/icons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://binarybirds.com/icons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="https://binarybirds.com/icons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://binarybirds.com/icons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://binarybirds.com/icons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png">
 
     <link
         rel="stylesheet"
@@ -78,11 +78,11 @@
             <a href="/">
                 <picture>
                     <source
-                        srcset="https://binarybirds.com/images/logos/logo~dark.png"
+                        srcset="/images/logos/logo~dark.png"
                         media="(prefers-color-scheme: dark)"
                         >
                     <img
-                        src="https://binarybirds.com/images/logos/logo.png"
+                        src="/images/logos/logo.png"
                         alt="Logo of Binary Birds"
                         title="Binary Birds"
                         >
@@ -99,9 +99,9 @@
                     </label>
                     <div class="menu-items">
                         <a href="/development/">Development</a>
-                        <a href="/consulting/">Consulting</a>
-                        <a href="/blog/">Blog</a>
-                        <a href="/contact/">Contact</a>
+                    <a href="/consulting/">Consulting</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/contact/">Contact</a>
                     </div>
             </nav>
         </header>
@@ -916,12 +916,16 @@ try jsonData.write(
                 </header>
                 <div class="grid grid-221">
                         <div class="card post">
+                            <span class="featured">featured</span>
                             <div class="author-list">
+                                    <a href="https://binarybirds.com/blog/authors/tibor-bodecs/">
+                                    <img class="small rounded" src="/assets/blog/authors/tibor-bodecs/tibor-bodecs.jpeg" alt="Tibor Bödecs">
+                                    </a>
                             </div>
                         
                             <div class="meta">
                                 <time datetime="2023.06.07.">2023.06.07.</time>
-                                
+                                 &middot; <span class="reading-time">3 min read</span>
                             </div>
                             
                             <h3><a href="https://binarybirds.com/blog/posts/beginners-guide-to-swift-macros/">Beginner&#39;s guide to Swift macros</a></h3>
@@ -929,15 +933,19 @@ try jsonData.write(
                             
                             
                             <div class="tag-list">
+                                    <a href="https://binarybirds.com/blog/tags/swift/"><small>Swift</small></a>
                             </div>
                         </div>
                 <div class="card post">
                             <div class="author-list">
+                                    <a href="https://binarybirds.com/blog/authors/gabor-lengyel/">
+                                    <img class="small rounded" src="/assets/blog/authors/gabor-lengyel/gabor-lengyel.png" alt="Gábor Lengyel">
+                                    </a>
                             </div>
                         
                             <div class="meta">
                                 <time datetime="2023.05.18.">2023.05.18.</time>
-                                
+                                 &middot; <span class="reading-time">6 min read</span>
                             </div>
                             
                             <h3><a href="https://binarybirds.com/blog/posts/push-notifications-with-swift-server-side/">Sending push notifications using server side Swift in 2023</a></h3>
@@ -945,15 +953,19 @@ try jsonData.write(
                             
                             
                             <div class="tag-list">
+                                    <a href="https://binarybirds.com/blog/tags/swift/"><small>Swift</small></a>
                             </div>
                         </div>
                 <div class="card post">
                             <div class="author-list">
+                                    <a href="https://binarybirds.com/blog/authors/tibor-bodecs/">
+                                    <img class="small rounded" src="/assets/blog/authors/tibor-bodecs/tibor-bodecs.jpeg" alt="Tibor Bödecs">
+                                    </a>
                             </div>
                         
                             <div class="meta">
                                 <time datetime="2023.04.24.">2023.04.24.</time>
-                                
+                                 &middot; <span class="reading-time">3 min read</span>
                             </div>
                             
                             <h3><a href="https://binarybirds.com/blog/posts/static-site-generation-with-the-power-of-swift-and-toucan/">Static site geneneration with the power of Swift and Toucan</a></h3>
@@ -961,6 +973,8 @@ try jsonData.write(
                             
                             
                             <div class="tag-list">
+                                    <a href="https://binarybirds.com/blog/tags/product-updates/"><small>Product updates</small></a>
+            <a href="https://binarybirds.com/blog/tags/swift/"><small>Swift</small></a>
                             </div>
                         </div>
                 </div>
@@ -975,7 +989,7 @@ try jsonData.write(
               </header>
               <div class="grid grid-211">
                   <picture>
-                    <img alt="Practical Server Side Swift Cover" src="https://binarybirds.com/images/practical-server-side-swift-cover.png"/>
+                    <img alt="Practical Server Side Swift Cover" src="/images/practical-server-side-swift-cover.png"/>
                   </picture>
                   
                   <div class="info">
@@ -999,11 +1013,11 @@ try jsonData.write(
                 <div>
                     <picture>
                         <source
-                            srcset="https://binarybirds.com/images/logos/logo~dark.png"
+                            srcset="/images/logos/logo~dark.png"
                             media="(prefers-color-scheme: dark)"
                             >
                         <img
-                            src="https://binarybirds.com/images/logos/logo.png"
+                            src="/images/logos/logo.png"
                             alt="Logo of Binary Birds"
                             title="Binary Birds"
                             >

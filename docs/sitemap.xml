@@ -1,9 +1,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://binarybirds.com/</loc>
-        <lastmod>2024-09-04</lastmod>
+        <lastmod>2024-10-15</lastmod>
         <loc>https://binarybirds.com/blog/</loc>
-        <lastmod>2024-09-04</lastmod>
+        <lastmod>2024-10-15</lastmod>
         <loc>https://binarybirds.com/blog/authors/andras-sipos/</loc>
         <lastmod>2024-09-02</lastmod>
         <loc>https://binarybirds.com/blog/authors/ferenc-viasz-kadi/</loc>
@@ -23,11 +23,11 @@
         <loc>https://binarybirds.com/blog/tags/swift/</loc>
         <lastmod>2024-09-02</lastmod>
         <loc>https://binarybirds.com/consulting/</loc>
-        <lastmod>2024-09-04</lastmod>
+        <lastmod>2024-10-15</lastmod>
         <loc>https://binarybirds.com/contact/</loc>
-        <lastmod>2024-09-04</lastmod>
+        <lastmod>2024-10-15</lastmod>
         <loc>https://binarybirds.com/development/</loc>
-        <lastmod>2024-09-04</lastmod>
+        <lastmod>2024-10-15</lastmod>
         <loc>https://binarybirds.com/blog/posts/how-to-write-openapi-specs-using-swift-and-openapi-kit/</loc>
         <lastmod>2024-09-02</lastmod>
         <loc>https://binarybirds.com/blog/posts/beginners-guide-to-swift-macros/</loc>
