@@ -1,0 +1,38 @@
+id: author
+template: blog.author.default
+
+properties:
+    github:
+        type: string
+        required: false
+    x:
+        type: string
+        required: false
+    linkedin:
+        type: string
+        required: false
+    sswg:
+        type: bool
+        required: false
+    priority:
+        type: int
+        required: true
+
+context:
+    site:
+        authors:
+            sort: priority
+            order: desc
+            pagination:
+                limit: 9
+        
+    local:
+        posts:
+            references: post
+            foreignKey: authors
+            sort: priority
+            order: desc
+            limit: 9
+
+
+

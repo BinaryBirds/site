@@ -40,7 +40,7 @@
 
     {{#page.css}}<link rel="stylesheet" href="{{.}}">{{/page.css}}
     
-    {{> blocks.icons}}
+    {{> partials.icons}}
 
     <link
         rel="stylesheet"
@@ -65,7 +65,7 @@
 </head>
 
 <body>
-    {{> blocks.navigation}}
+    {{> partials.navigation}}
     
     <main>
         {{$main}}
@@ -73,7 +73,7 @@
         {{/main}}
     </main>
     
-    {{> blocks.footer}}
+    {{> partials.footer}}
 
     
     {{#page.js}}<script src="{{.}}" async></script>{{/page.js}}
