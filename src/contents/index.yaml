@@ -1,8 +1,8 @@
-baseUrl: "https://binarybirds.com/"
+#baseUrl: "https://binarybirds.com/"
+baseUrl: "http://127.0.0.1:3000/"
 language: "en-US"
 title: "Binary Birds"
 description: "Server-side Swift development and consulting. Secure, efficient, scalable solutions."
-dateFormat: "yyyy.MM.dd."
 navigation:
     - label: "Development"
       url: "/development/"

@@ -1,0 +1,74 @@
+scopes:
+
+queries: 
+    posts:
+        contentType: post
+        scope: list
+        limit: 12
+        orderBy:
+            - key: publication
+              direction: desc
+    featured:
+        contentType: post
+        scope: list
+        filter:
+            key: featured
+            operator: equals
+            value: true
+        orderBy:
+            - key: publication
+              direction: desc
+    authors:
+        contentType: author
+        scope: list
+        limit: 12
+        orderBy:
+            - key: title
+              direction: asc
+    tags:
+        contentType: tag
+        scope: list
+        limit: 12
+        orderBy:
+            - key: title
+              direction: asc
+
+dataTypes:
+    date:
+        formats:
+            full: "yyyy/MM/dd"
+
+contentTypes: 
+    include:
+        - page
+        - author
+        - tag
+        - post
+    exclude:
+        - rss
+        - sitemap
+        - redirect
+
+iterators:
+    post.pagination:
+        contentType: post
+        limit: 24
+
+transformers:
+
+engine: 
+    id: mustache
+    options:
+        contentTypes: 
+            page:
+                template: "pages.default"
+            author:
+                template: "blog.author.default"
+            tag:
+                template: "blog.tag.default"
+            post:
+                template: "blog.post.default"
+output:
+    path: "{{slug}}"
+    file: index
+    ext: html

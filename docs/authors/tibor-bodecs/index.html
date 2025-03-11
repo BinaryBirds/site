@@ -9,17 +9,17 @@
     
     
     
-    <title>Static site geneneration with the power of Swift and Toucan - Binary Birds</title>
-    <meta name="description" content="Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it.">
+    <title>Tibor Bödecs - Binary Birds</title>
+    <meta name="description" content="CEO, SSWG member">
     
-    <meta property="og:url" content="http://127.0.0.1:3000/static-site-generation-with-the-power-of-swift-and-toucan/">
-    <meta property="og:title" content="Static site geneneration with the power of Swift and Toucan - Binary Birds">
-    <meta property="og:description" content="Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it.">
+    <meta property="og:url" content="http://127.0.0.1:3000/authors/tibor-bodecs/">
+    <meta property="og:title" content="Tibor Bödecs - Binary Birds">
+    <meta property="og:description" content="CEO, SSWG member">
     
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Static site geneneration with the power of Swift and Toucan - Binary Birds">
-    <meta name="twitter:description" content="Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it.">
+    <meta name="twitter:title" content="Tibor Bödecs - Binary Birds">
+    <meta name="twitter:description" content="CEO, SSWG member">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,61 +105,21 @@
     
 
     <main id="page-container">
-    <div class="wrapper">
-    <div class="article-with-toc">
-        <div>
-            <article>
+    <section>
+        <div class="wrapper">
+            <div id="author-page">
                 <header>
-    
-                    <div class="meta">
-                        <time datetime=""></time>
-                        
-                    </div>
-                    
-                    <h1>Static site geneneration with the power of Swift and Toucan</h1>
-                    <p>Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it.</p>
+                    <div class="profile-picture"></div>
+                    <h1>Tibor Bödecs</h1>
+                    <hr>
+                    <p>CEO, SSWG member</p>
+                    <p>3 posts</p>
                 </header>
     
-                <section>
-                    <h2 id="installation">Installation</h2><p>Toucan is available on <a href="https://github.com/binarybirds/toucan" target="_blank">GitHub</a> as an open source Swift package. Feel free to clone the repository and run <code>make install</code> to make the <code>toucan</code> command available.</p><pre><code>git clone https://github.com/BinaryBirds/Toucan.git
-cd Toucan
-make install
-</code></pre><h2 id="usage">Usage</h2><p>Toucan has 3 subcommands:</p><ul><li>generate</li><li>watch</li><li>serve</li></ul><p>You should be able to generate a new website by using the <code>generate</code> command. You just need a project template that is compatible with the static site generator. We’re going to release an official template project for this purpose later on, but for now feel free to grab the source code of <a href="https://github.com/binarybirds/site" target="_blank">this website</a> and use that as a starter project.</p><pre><code>toucan generate ./src ./docs
-</code></pre><p>By using the <code>watch</code> command you should be able to watch for file changes and auto-generate the static site, based on your source folder.</p><pre><code>toucan watch ./src ./docs
-</code></pre><p>The <code>serve</code> command will launch a basic web server, that you can use to preview your static site.</p><pre><code>toucan serve ./docs
-</code></pre><h2 id="project-structure">Project structure</h2><p>The <code>src</code> directory is where your content and template files should be located. There are three key directories that toucan will use to generate your website.</p><ul><li><code>contents</code> - Your content using Markdown</li><li><code>public</code> - Public files</li><li><code>templates</code> - Template files</li></ul><h3 id="contents">Contents</h3><p>The contents folder is organized the following way:</p><ul><li><code>posts</code> - Place your blog posts under this folder</li><li><code>pages</code> - Place your page contents this folder</li><li><code>404.md</code> - The content configuration for the not found page</li><li><code>home.md</code> - The content configuration for the home page</li><li><code>index.md</code> - The content configuration for the entire site</li></ul><p>Toucan will try to recursively discover all the <code>content.md</code> files under the posts and pages directory, and process everything based on those. You can also add cover image support by placing a <code>cover.jpg</code> file next to them.</p><p>You can easily embed images, just create an <code>images</code> folder next to your <code>content.md</code> file and you can reference those images without path prefixes, this also support dark mode variants, if you suffix the images with <code>~dark</code>.</p><h3 id="public-files">Public files</h3><p>Everything what is located inside the public folder will be copied recursively during site generation process. This means you can reference these files when building your templates or writing your content. Feel free to use this folder for your CSS and public image assets.</p><h3 id="templates">Templates</h3><p>The templates folder should contain the following files:</p><ul><li><code>index.html</code> - Tha index template file</li><li><code>404.html</code> - The not found template</li><li><code>home.html</code> - The home template file</li><li><code>home-posts.html</code> - Post template for the home page</li><li><code>page.html</code> - Template file for individual pages</li><li><code>post.html</code> - Template file for posts</li></ul><p>Templates are plain old HTML files, feel free to modify them as you wish, you can use a few built-in variables to make them a bit more dynamic. Variables are in between <code>{}</code> characters.</p><ul><li><code>baseUrl</code> - Returns the base URL of the site</li><li><code>title</code> - The title of the page</li><li><code>description</code> - The description of the page</li><li><code>image</code> - The cover image of the page</li><li><code>slug</code> - The slug of the page</li><li><code>permalink</code> - The permalink of the page</li><li><code>contents</code> - Used to embed other contents</li><li><code>date</code> - The date of the post</li><li><code>tags</code> - The tag list for the post</li></ul><h2 id="markdown">Markdown</h2><p>You can write your content as <a href="https://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown</a> text and toucan will generate HTML files out of it. Markdown files can have an additional metadata section, this is where you can specify the following attributes:</p><ul><li><code>slug</code> - Slug of your content</li><li><code>title</code>: Title of your content</li><li><code>description</code> - Description of your content</li><li><code>date</code> - Date of your post (e.g. 2023/04/24)</li><li><code>tags</code> - Tags for your post, separated by a coma</li></ul><p>The <code>index.md</code> file is a special content file, this is where you can set up the following things:</p><ul><li><code>baseUrl</code> - Base URL of your site (e.g. <code>./</code>, <code>/</code>, <code>https://mywebsite.com</code>)</li><li><code>language</code> - Language of your site (e.g. en-US)</li><li><code>title</code> - title of your site</li><li><code>description</code> - Description of your site</li></ul><p>The <code>404.md</code> file is useful if you want to deploy your site using GitHub pages with a <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site" target="_blank">custom 404 page</a>.</p><h2 id="summary">Summary</h2><p>Toucan is a brand new project and we know it’s far from perfect, but if you are looking for a simple solution to host static sites using <a href="https://pages.github.com" target="_blank">GitHub pages</a> and you’d like to focus more on your content and less on the infrastructure it can be an ideal choice. Feel free to <a href="https://github.com/BinaryBirds/Toucan/discussions/1" target="_blank">contact us</a> if you want to know more about it or submit an issue, maybe even a PR on GitHub. 😉</p>
-                </section>
                 
                 
-            </article>
-        </div>
-        <div>
-            <aside>
-    
-            <div class="author-list">
-                    <a href="http://127.0.0.1:3000/authors/tibor-bodecs/">
+                <div class="grid grid-221">
                     
-                    </a>
-            </div>
-            <div class="tag-list">
-                    <a href="http://127.0.0.1:3000/tags/product-updates/"><small>Product updates</small></a>
-                <a href="http://127.0.0.1:3000/tags/swift/"><small>Swift</small></a>
-            </div>
-            
-            <h4>On this page</h4>
-            <ul>
-            </ul>
-            </aside>
-        </div>
-    </div>
-    </div>
-    
-    <section class="primary">
-        <div class="wrapper">
-            <header>
-            <h2>Related posts</h2>
-            </header>
-            <div class="grid grid-221">
                     <div class="card post">
                         <span class="featured">featured</span>
                         <div class="author-list">
@@ -198,7 +158,8 @@ make install
             <a href="http://127.0.0.1:3000/tags/swift/"><small>Swift</small></a>
                         </div>
                     </div>
-                <div class="card post">
+                
+                    <div class="card post">
                         <div class="author-list">
                                 <a href="http://127.0.0.1:3000/authors/andras-sipos/">
                                 
@@ -235,44 +196,8 @@ make install
             <a href="http://127.0.0.1:3000/tags/swift/"><small>Swift</small></a>
                         </div>
                     </div>
-                <div class="card post">
-                        <div class="author-list">
-                                <a href="http://127.0.0.1:3000/authors/andras-sipos/">
-                                
-                                </a>
-            <a href="http://127.0.0.1:3000/authors/ferenc-viasz-kadi/">
-                                
-                                </a>
-            <a href="http://127.0.0.1:3000/authors/gabor-lengyel/">
-                                
-                                </a>
-            <a href="http://127.0.0.1:3000/authors/laszlo-kovacs/">
-                                
-                                </a>
-            <a href="http://127.0.0.1:3000/authors/nandor-bereczki/">
-                                
-                                </a>
-            <a href="http://127.0.0.1:3000/authors/tibor-bodecs/">
-                                
-                                </a>
-                        </div>
-                    
-                        <div class="meta">
-                            <time datetime=""></time>
-                            
-                        </div>
-                        
-                        <h3><a href="http://127.0.0.1:3000/push-notifications-with-swift-server-side/">Sending push notifications using server side Swift in 2023</a></h3>
-                        <p>Learn how to send push notifications with Swift on the server side using the Google FCM API and the APN Swift library.</p>
-                        
-                        
-                        <div class="tag-list">
-                                <a href="http://127.0.0.1:3000/tags/open-api/"><small>OpenAPI</small></a>
-            <a href="http://127.0.0.1:3000/tags/product-updates/"><small>Product updates</small></a>
-            <a href="http://127.0.0.1:3000/tags/swift/"><small>Swift</small></a>
-                        </div>
-                    </div>
-                <div class="card post">
+                
+                    <div class="card post">
                         <div class="author-list">
                                 <a href="http://127.0.0.1:3000/authors/andras-sipos/">
                                 
@@ -309,34 +234,11 @@ make install
             <a href="http://127.0.0.1:3000/tags/swift/"><small>Swift</small></a>
                         </div>
                     </div>
+                </div>
+                
             </div>
         </div>
     </section>
-    
-    <section class="book">
-      <div class="wrapper">
-          <header>
-              <h2>Swift on the server</h2>
-              <p>We specialize on server side Swift development. We are so dedicated and enthusiastic that we even wrote a book on the topic.</p>
-          </header>
-          <div class="grid grid-211">
-              <picture>
-                <img alt="Practical Server Side Swift Cover" src="/images/practical-server-side-swift-cover.png"/>
-              </picture>
-              
-              <div class="info">
-                <h3>Practical Server-Side Swift</h3>
-                <p>Swift on the server is an amazing new opportunity to build fast, safe and scalable backend apps. Write your very first web-based application by using your favorite programming language. Learn how to build a modular blog engine using the latest version of the Vapor 4 framework. This book will help you to design and create modern APIs that'll allow you to share code between the server side and iOS. Start becoming a full-stack Swift developer.</p>
-                <p><a href="#">Download sample</a></p>
-                <p><a class="button" href="https://theswiftdev.gumroad.com/l/practical-server-side-swift" target="_blank">Get it on Gumroad</a></p>
-              </div>
-          </div>
-          
-          
-        
-      </div>
-    </section>
-    
     </main>
 
     <div id="footer-container">

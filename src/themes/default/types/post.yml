@@ -1,72 +1,32 @@
-id: post
-rss: true
-template: blog.post.default
-
-pagination:
-    bundle: blog/posts/pagination
-    limit: 10
-    sort: publication
-    order: desc
+type: post
+paths:
+    - blog/posts
 
 properties:
     featured:
         type: bool
         required: true
+        default: false
 
 relations:
     authors:
         references: author
-        join: many
-        sort: priority
-        order: desc
+        type: many
+        order:
+            key: title
+            direction: asc
     tags:
         references: tag
-        join: many
-        sort: title
-        order: asc
+        type: many
+        order:
+            key: title
+            direction: asc
 
-context:
-    site:
-        posts:
-            sort: publication
-            order: desc
-            limit: 10
-        
-        featured:
-            sort: publication
-            order: desc
-            limit: 10
-            filter:
-                field: featured
-                method: equals
-                value: true
-                
-    local:
-        prev:
-            references: post
-            foreignKey: $prev
-            sort: publication
-            order: desc
-
-        next:
-            references: post
-            foreignKey: $next
-            sort: publication
-            order: desc
-            
-        related:
-            references: post
-            foreignKey: $same.tags
-            sort: publication
-            order: desc
-            limit: 6
-
-        moreByAuthors:
-            references: post
-            foreignKey: $same.authors
-            sort: publication
-            order: desc
-            limit: 6
-        
-
-
+queries:
+    related:
+        contentType: post
+        limit: 4
+        filter:
+            key: tags
+            operator: matching
+            value: "{{tags}}"
