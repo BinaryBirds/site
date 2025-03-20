@@ -75,14 +75,14 @@
 <body>
     <div id="navigation-container">
         <header id="navigation" class="wrapper">
-            <a href="/">
+            <a href="http://127.0.0.1:3000/">
                 <picture>
                     <source
                         srcset="http://127.0.0.1:3000/images/logos/logo~dark.png"
                         media="(prefers-color-scheme: dark)"
                         >
                     <img
-                        src="/images/logos/logo.png"
+                        src="http://127.0.0.1:3000/images/logos/logo.png"
                         alt="Logo of Binary Birds"
                         title="Binary Birds"
                         >
@@ -116,8 +116,8 @@
                 <header>
     
                     <div class="meta">
-                        <time datetime=""></time>
-                        
+                        <time datetime="2023-05-18 17:36:12">2023-05-18 17:36:12</time>
+                         &middot; <span class="reading-time">6 min read</span>
                     </div>
                     
                     <h1>Sending push notifications using server side Swift in 2023</h1>
@@ -306,8 +306,8 @@ try await client.sendAlertNotification(
             <aside>
     
             <div class="author-list">
-                    <a href="http://127.0.0.1:3000/blog/gabor-lengyel/">
-                    
+                    <a href="http://127.0.0.1:3000/blog/authors/gabor-lengyel/">
+                    <img class="medium rounded" src="http://127.0.0.1:3000/assets/blog/authors/gabor-lengyel/gabor-lengyel.png" alt="Gábor Lengyel">
                     </a>
             </div>
             <div class="tag-list">
@@ -316,6 +316,91 @@ try await client.sendAlertNotification(
             
             <h4>On this page</h4>
             <ul>
+                <li class="first-level">
+                    <a href="#prerequisites">Prerequisites</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#firebase">Firebase</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-1-firebase-project">Step 1, Firebase project</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-2-firebase-add-android-application">Step 2, Firebase add Android application</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-3-firebase-add-ios-application">Step 3, Firebase add iOS application</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-4-firebase-extra-setup-for-ios-application">Step 4, Firebase extra setup for iOS application</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-5-server-side">Step 5, Server side</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-6-send-messages">Step 6, Send messages</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-7-choose-message-type">Step 7, Choose message type</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#apple-apns">Apple APNs</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-1-setup-p8-or-p12-file">Step 1, Setup p8 or p12 file</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-2-server-side">Step 2, Server side</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#amazon-sns">Amazon SNS</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-1-setup-a-topics">Step 1, Setup a Topics</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-2-setup-platform-applications">Step 2, Setup Platform applications</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#step-3-server-side">Step 3, Server side</a>
+                    <ul>
+                    </ul>
+                </li>
+    <li class="first-level">
+                    <a href="#summary">Summary</a>
+                    <ul>
+                    </ul>
+                </li>
             </ul>
             </aside>
         </div>
@@ -331,15 +416,13 @@ try await client.sendAlertNotification(
                     <div class="card post">
                         <span class="featured">featured</span>
                         <div class="author-list">
-                                <a href="http://127.0.0.1:3000/blog/tibor-bodecs/">
-                                
+                                <a href="http://127.0.0.1:3000/blog/authors/tibor-bodecs/">
+                                <img class="small rounded" src="http://127.0.0.1:3000/assets/blog/authors/tibor-bodecs/tibor-bodecs.jpeg" alt="Tibor Bödecs">
                                 </a>
                         </div>
                     
                         <div class="meta">
-                            <time datetime="">
-                                 
-                            </time>
+                            <time datetime="2023-06-07 14:57:12">2023-06-07 14:57:12</time>
                         </div>
                         
                         <h3><a href="http://127.0.0.1:3000/blog/beginners-guide-to-swift-macros/">Beginner&#39;s guide to Swift macros</a></h3>
@@ -352,15 +435,13 @@ try await client.sendAlertNotification(
                     </div>
                 <div class="card post">
                         <div class="author-list">
-                                <a href="http://127.0.0.1:3000/blog/tibor-bodecs/">
-                                
+                                <a href="http://127.0.0.1:3000/blog/authors/tibor-bodecs/">
+                                <img class="small rounded" src="http://127.0.0.1:3000/assets/blog/authors/tibor-bodecs/tibor-bodecs.jpeg" alt="Tibor Bödecs">
                                 </a>
                         </div>
                     
                         <div class="meta">
-                            <time datetime="">
-                                 
-                            </time>
+                            <time datetime="2023-07-06 16:15:54">2023-07-06 16:15:54</time>
                         </div>
                         
                         <h3><a href="http://127.0.0.1:3000/blog/how-to-write-openapi-specs-using-swift-and-openapi-kit/">How to write OpenAPI specs using Swift and OpenAPIKit?</a></h3>
@@ -374,15 +455,13 @@ try await client.sendAlertNotification(
                     </div>
                 <div class="card post">
                         <div class="author-list">
-                                <a href="http://127.0.0.1:3000/blog/gabor-lengyel/">
-                                
+                                <a href="http://127.0.0.1:3000/blog/authors/gabor-lengyel/">
+                                <img class="small rounded" src="http://127.0.0.1:3000/assets/blog/authors/gabor-lengyel/gabor-lengyel.png" alt="Gábor Lengyel">
                                 </a>
                         </div>
                     
                         <div class="meta">
-                            <time datetime="">
-                                 
-                            </time>
+                            <time datetime="2023-05-18 17:36:12">2023-05-18 17:36:12</time>
                         </div>
                         
                         <h3><a href="http://127.0.0.1:3000/blog/push-notifications-with-swift-server-side/">Sending push notifications using server side Swift in 2023</a></h3>
@@ -395,15 +474,13 @@ try await client.sendAlertNotification(
                     </div>
                 <div class="card post">
                         <div class="author-list">
-                                <a href="http://127.0.0.1:3000/blog/tibor-bodecs/">
-                                
+                                <a href="http://127.0.0.1:3000/blog/authors/tibor-bodecs/">
+                                <img class="small rounded" src="http://127.0.0.1:3000/assets/blog/authors/tibor-bodecs/tibor-bodecs.jpeg" alt="Tibor Bödecs">
                                 </a>
                         </div>
                     
                         <div class="meta">
-                            <time datetime="">
-                                 
-                            </time>
+                            <time datetime="2023-04-24 18:32:25">2023-04-24 18:32:25</time>
                         </div>
                         
                         <h3><a href="http://127.0.0.1:3000/blog/static-site-generation-with-the-power-of-swift-and-toucan/">Static site geneneration with the power of Swift and Toucan</a></h3>
@@ -483,10 +560,10 @@ try await client.sendAlertNotification(
                     
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/development">Development</a></li>
-                    <li><a href="/consulting">Consulting</a></li>
-                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="http://127.0.0.1:3000/">Home</a></li>
+                    <li><a href="http://127.0.0.1:3000/development">Development</a></li>
+                    <li><a href="http://127.0.0.1:3000/consulting">Consulting</a></li>
+                    <li><a href="http://127.0.0.1:3000/blog">Blog</a></li>
                 </ul>
             </nav>
     

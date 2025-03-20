@@ -5,15 +5,13 @@
     <div class="author-list">
         {{#authors}}
             <a href="{{permalink}}">
-            {{#imageUrl}}<img class="small rounded" src="{{imageUrl}}" alt="{{title}}">{{/imageUrl}}
+            {{#image}}<img class="small rounded" src="{{image}}" alt="{{title}}">{{/image}}
             </a>
         {{/authors}}
     </div>
 
     <div class="meta">
-        <time datetime="{{publication.formats.iso8601}}">
-            {{publication.date.short}} {{publication.time.short}}
-        </time>
+        <time datetime="{{publication}}">{{publication}}</time>
         {{#contents.readingTime}} 
             &middot; <span class="reading-time">{{.}} min read</span>
         {{/contents.readingTime}}

@@ -1,5 +1,6 @@
 id: post
 api: posts
+rss: true
 paths:
     - blog/posts
 

@@ -17,16 +17,16 @@
 
 <section class="">
     <div class="wrapper">
-        {{#empty(site.context.posts)}}
+        {{#empty(context.posts)}}
         Empty.
-        {{/empty(site.context.posts)}}
-        {{^empty(site.context.posts)}}
+        {{/empty(context.posts)}}
+        {{^empty(context.posts)}}
         <div class="grid grid-221">
-            {{#site.context.posts}}
+            {{#context.posts}}
             {{> partials.blog.post}}
-            {{/site.context.posts}}
+            {{/context.posts}}
         </div>
-        {{/empty(site.context.posts)}}
+        {{/empty(context.posts)}}
 
         <div class="centered more-posts">
             <a class="button" href="/blog/posts/page/1">Browse all posts</a>
