@@ -11,8 +11,12 @@
     </div>
 
     <div class="meta">
-        <time datetime="{{publication.html}}">{{publication.html}}</time>
-        {{#readingTime}} &middot; <span class="reading-time">{{readingTime}} min read</span>{{/readingTime}}
+        <time datetime="{{publication.formats.iso8601}}">
+            {{publication.date.short}} {{publication.time.short}}
+        </time>
+        {{#contents.readingTime}} 
+            &middot; <span class="reading-time">{{.}} min read</span>
+        {{/contents.readingTime}}
     </div>
     
     <h3><a href="{{permalink}}">{{title}}</a></h3>

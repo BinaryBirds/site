@@ -1,4 +1,5 @@
-type: post
+id: post
+api: posts
 paths:
     - blog/posts
 
@@ -23,6 +24,20 @@ relations:
             direction: asc
 
 queries:
+    prev:
+        contentType: post
+        scope: detail
+        limit: 1
+        orderBy:
+            - key: publication
+              direction: desc
+    next:
+        contentType: post
+        scope: detail
+        limit: 1
+        orderBy:
+            - key: publication
+              direction: desc
     related:
         contentType: post
         limit: 4

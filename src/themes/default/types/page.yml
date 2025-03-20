@@ -1,4 +1,4 @@
-type: page
+id: page
 paths:
     - home
     - blog
