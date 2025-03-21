@@ -18,24 +18,6 @@
             <pubDate>{{publication.formats.rss}}</pubDate>
         </item>
     {{/page.posts}}
-    {{#page.tags}}
-        <item>
-            <guid isPermaLink="true">{{permalink}}</guid>
-            <title><![CDATA[ {{title}} ]]></title>
-            <description><![CDATA[ {{description}} ]]></description>
-            <link>{{permalink}}</link>
-            <pubDate>{{publication.formats.rss}}</pubDate>
-        </item>
-    {{/page.tags}}
-    {{#page.authors}}
-        <item>
-            <guid isPermaLink="true">{{permalink}}</guid>
-            <title><![CDATA[ {{name}} ]]></title>
-            <description><![CDATA[ {{description}} ]]></description>
-            <link>{{permalink}}</link>
-            <pubDate>{{publication.formats.rss}}</pubDate>
-        </item>
-    {{/page.authors}}
 
 </channel>
 </rss>
