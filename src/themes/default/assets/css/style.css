@@ -352,17 +352,8 @@ p.primary {
     font-size: 0.8rem;
 }
 
-@media screen and (min-width: 600px) {
-    .testimonial-image {
-        padding: 2rem 0;
-    }
-}
 @media screen and (min-width: 900px) {
 
-    .testimonial-image {
-        padding: 0 4rem;
-    }
-    
     .article-with-toc {
         display: grid;
         grid-column-gap: 30px;

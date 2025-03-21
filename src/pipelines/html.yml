@@ -33,6 +33,13 @@ queries:
         orderBy:
             - key: title
               direction: asc
+    testimonials:
+        contentType: testimonial
+        scope: list
+        limit: 12
+        orderBy:
+            - key: priority
+              direction: asc
 
 dataTypes:
     date:
@@ -45,10 +52,6 @@ contentTypes:
         - author
         - tag
         - post
-    exclude:
-        - rss
-        - sitemap
-        - redirect
 
 iterators:
     post.pagination:

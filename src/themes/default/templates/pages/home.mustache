@@ -144,20 +144,17 @@
         </div>
     </section>
 
-    
-
-
     <section class="team">
         <div class="wrapper">
-        <header>
-            <h2>Who we are</h2>
-            <p>Our team of experts work together as a unit for more than 10 years, which connection will reflect on how we operate in order to move you forward.</p>
-        </header>
-        <div class="grid grid-321">
-            {{#context.authors}}
-                {{> partials.blog.member}}
-            {{/context.authors}}
-        </div>
+            <header>
+                <h2>Who we are</h2>
+                <p>Our team of experts work together as a unit for more than 10 years, which connection will reflect on how we operate in order to move you forward.</p>
+            </header>
+            <div class="grid grid-321">
+                {{#context.authors}}
+                    {{> partials.blog.member}}
+                {{/context.authors}}
+            </div>
         </div>
     </section>
 
@@ -168,18 +165,9 @@
                 <p>Take a moment to see what our clients are saying about us.</p>
             </header>
             <div class="grid grid-221">
-                <div>
-                    <div class="testimonial-image">
-                        <img src="{{site.baseUrl}}/images/artur-kovacs.png">
-                    </div>
-                </div>
-                <div>
-                    <div class="testimonial">
-                        <blockquote>I've known the Binary Birds team members for a long time, and working with them has been an absolute pleasure. They are at the top of their game in delivering software, managing digital products and working with clients, consistently demonstrating a great sense of reliability. I highly recommend checking them out.</blockquote>
-                        <h3>Artúr Kovács</h3>
-                        <p>General Manager @ <a href="https://avalliance.com/" target="_blank">AV Alliance</a></p>
-                    </div>
-                </div>
+                {{#context.testimonials}}
+                    {{> partials.testimonial}}
+                {{/context.testimonials}}
             </div>
         </div>
     </section>
