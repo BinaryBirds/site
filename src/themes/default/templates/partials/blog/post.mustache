@@ -10,8 +10,10 @@
         {{/authors}}
     </div>
 
+    
+
     <div class="meta">
-        <time datetime="{{publication}}">{{publication}}</time>
+        <time datetime="{{publication.formats.sitemap}}">{{publication.formats.sitemap}}</time>
         {{#contents.readingTime}} 
             &middot; <span class="reading-time">{{.}} min read</span>
         {{/contents.readingTime}}

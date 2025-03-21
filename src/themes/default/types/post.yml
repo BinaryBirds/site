@@ -5,6 +5,12 @@ paths:
     - blog/posts
 
 properties:
+    title:
+        type: string
+        required: true
+    publication:
+        type: date
+        required: true
     featured:
         type: bool
         required: true
