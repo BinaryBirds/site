@@ -1,4 +1,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+            <loc>http://127.0.0.1:3000/blog/</loc>
+            <lastmod>2025-03-20</lastmod>
+            <loc>http://127.0.0.1:3000/blog/posts/page/{{post.pagination}}</loc>
+            <lastmod>2025-03-20</lastmod>
+            <loc>http://127.0.0.1:3000/consulting/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/contact/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/development/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000</loc>
+            <lastmod>2025-03-20</lastmod>
+
+            <loc>http://127.0.0.1:3000/blog/beginners-guide-to-swift-macros/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/blog/how-to-write-openapi-specs-using-swift-and-openapi-kit/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/blog/push-notifications-with-swift-server-side/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/blog/static-site-generation-with-the-power-of-swift-and-toucan/</loc>
+            <lastmod>2025-03-13</lastmod>
+
+            <loc>http://127.0.0.1:3000/blog/authors/andras-sipos/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/blog/authors/ferenc-viasz-kadi/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/blog/authors/gabor-lengyel/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/blog/authors/laszlo-kovacs/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/blog/authors/nandor-bereczki/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/blog/authors/tibor-bodecs/</loc>
+            <lastmod>2025-03-13</lastmod>
+
+            <loc>http://127.0.0.1:3000/blog/open-api/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/blog/product-updates/</loc>
+            <lastmod>2025-03-13</lastmod>
+            <loc>http://127.0.0.1:3000/blog/swift/</loc>
+            <lastmod>2025-03-13</lastmod>
     </url>
 </urlset>
