@@ -27,15 +27,15 @@
         </div>
     {{/empty(iterator.items)}}
     
-    {{#empty(terator.links)}}
-    {{/empty(terator.links)}}
-    {{^empty(terator.links)}}
+    {{#empty(iterator.links)}}
+    {{/empty(iterator.links)}}
+    {{^empty(iterator.links)}}
         <div class="pagination">
-        {{#terator.links}}
+        {{#iterator.links}}
             {{> partials.pagination}}
-        {{/terator.links}}
+        {{/iterator.links}}
         </div>
-    {{/empty(terator.links)}}
+    {{/empty(iterator.links)}}
 
     </div>
 </section>
