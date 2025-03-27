@@ -1,15 +1,15 @@
 <div id="navigation-container">
     <header id="navigation" class="wrapper">
-        <a href="/">
+        <a href="{{site.baseUrl}}/">
             <picture>
                 <source
-                    srcset="/images/logos/logo~dark.png"
+                    srcset="{{site.baseUrl}}/images/logos/logo~dark.png"
                     media="(prefers-color-scheme: dark)"
                     >
                 <img
-                    src="/images/logos/logo.png"
-                    alt="Logo of {{site.title}}"
-                    title="{{site.title}}"
+                    src="{{site.baseUrl}}/images/logos/logo.png"
+                    alt="Logo of {{site.name}}"
+                    title="{{site.name}}"
                     >
             </picture>
         </a>
@@ -23,9 +23,9 @@
                     </svg>
                 </label>
                 <div class="menu-items">
-                    {{#navigation}}
+                    {{#site.navigation}}
                     <a href="{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
-                    {{/navigation}}
+                    {{/site.navigation}}
                 </div>
         </nav>
     </header>

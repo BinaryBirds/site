@@ -1,0 +1,33 @@
+id: testimonial
+paths:
+    - testimonial
+
+properties:
+    name:
+        type: string
+        required: true
+    text:
+        type: string
+        required: true
+    role:
+        type: string
+        required: true
+    company:
+        type: string
+        required: true
+    company-url:
+        type: string
+        required: true
+    priority:
+        type: int
+        required: true
+
+relations:
+
+queries:
+    testimonial:
+        contentType: testimonial
+        scope: list
+        orderBy:
+            - key: priority
+              direction: asc

@@ -12,31 +12,31 @@
     {{#page.prev}}<link rel="prev" href="{{permalink}}">{{/page.prev}}
     {{#page.next}}<link rel="next" href="{{permalink}}">{{/page.next}}
     
-    <title>{{page.title}} - {{site.title}}</title>
+    <title>{{page.title}} - {{site.name}}</title>
     <meta name="description" content="{{page.description}}">
     
     <meta property="og:url" content="{{page.permalink}}">
-    <meta property="og:title" content="{{page.title}} - {{site.title}}">
+    <meta property="og:title" content="{{page.title}} - {{site.name}}">
     <meta property="og:description" content="{{page.description}}">
-    {{#page.imageUrl}}<meta property="og:image" content="{{.}}" />{{/page.imageUrl}}
+    {{#page.image}}<meta property="og:image" content="{{.}}" />{{/page.image}}
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{page.title}} - {{site.title}}">
+    <meta name="twitter:title" content="{{page.title}} - {{site.name}}">
     <meta name="twitter:description" content="{{page.description}}">
-    {{#page.imageUrl}}<meta name="twitter:image" content="{{.}}">{{/page.imageUrl}}
+    {{#page.image}}<meta name="twitter:image" content="{{.}}">{{/page.image}}
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
 
-    <link rel="stylesheet" href="/css/modern-normalize.css">
-    <link rel="stylesheet" href="/css/modern-base.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/grid.css">
-    <link rel="stylesheet" href="/css/navigation.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/modern-normalize.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/modern-base.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/variables.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/base.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/grid.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/navigation.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/footer.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/style.css">
 
     {{#page.css}}<link rel="stylesheet" href="{{.}}">{{/page.css}}
     
@@ -67,15 +67,15 @@
 <body>
     {{> partials.navigation}}
     
-    <main>
-        {{$main}}
+
+    <main id="page-container">
+    {{$main}}
         <p>No content.</p>
-        {{/main}}
+    {{/main}}
     </main>
-    
+
     {{> partials.footer}}
 
-    
     {{#page.js}}<script src="{{.}}" async></script>{{/page.js}}
     <script src="/js/favicon.js"></script>
     

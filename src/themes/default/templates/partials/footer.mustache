@@ -4,13 +4,13 @@
             <div>
                 <picture>
                     <source
-                        srcset="/images/logos/logo~dark.png"
+                        srcset="{{site.baseUrl}}/images/logos/logo~dark.png"
                         media="(prefers-color-scheme: dark)"
                         >
                     <img
-                        src="/images/logos/logo.png"
-                        alt="Logo of {{site.title}}"
-                        title="{{site.title}}"
+                        src="{{site.baseUrl}}/images/logos/logo.png"
+                        alt="Logo of {{site.name}}"
+                        title="{{site.name}}"
                         >
                 </picture>
                 <h2>Binary Birds</h2>
@@ -36,14 +36,14 @@
                 
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/development">Development</a></li>
-                <li><a href="/consulting">Consulting</a></li>
-                <li><a href="/blog">Blog</a></li>
+                <li><a href="{{site.baseUrl}}/">Home</a></li>
+                <li><a href="{{site.baseUrl}}/development">Development</a></li>
+                <li><a href="{{site.baseUrl}}/consulting">Consulting</a></li>
+                <li><a href="{{site.baseUrl}}/blog">Blog</a></li>
             </ul>
         </nav>
 
-        <div id="copyright">Binary Birds © 2022-{{year}} &middot; All Rights Reserved</div>
+        <div id="copyright">Binary Birds © 2022-{{site.generation.formats.year}} &middot; All Rights Reserved</div>
 
     </footer>
 </div>

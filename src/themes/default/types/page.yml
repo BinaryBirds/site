@@ -1,0 +1,13 @@
+id: page
+paths:
+    - home
+    - blog
+    - consulting
+    - contact
+    - development
+
+properties:
+    title:
+        type: string
+        required: true
+        default: null

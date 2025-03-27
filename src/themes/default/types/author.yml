@@ -1,5 +1,6 @@
 id: author
-template: blog.author.default
+paths:
+    - blog/authors
 
 properties:
     github:
@@ -18,21 +19,16 @@ properties:
         type: int
         required: true
 
-context:
-    site:
-        authors:
-            sort: priority
-            order: desc
-            pagination:
-                limit: 9
-        
-    local:
-        posts:
-            references: post
-            foreignKey: authors
-            sort: priority
-            order: desc
-            limit: 9
+relations:
 
-
-
+queries:
+    posts:
+        contentType: post
+        scope: list
+        filter:
+            key: authors
+            operator: contains
+            value: "{{id}}"
+        orderBy:
+            - key: publication
+              direction: desc

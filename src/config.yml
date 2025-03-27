@@ -1,0 +1,4 @@
+dateFormats:
+    input: "yyyy-MM-dd HH:mm:ss"
+    output:
+        year: "y"

@@ -14,13 +14,13 @@
                 <p>{{count(page.posts)}} posts</p>
             </header>
 
-            {{& page.contents}}
+            {{& page.contents.html}}
             
             {{#empty(page.posts)}}
             Empty.
             {{/empty(page.posts)}}
             {{^empty(page.posts)}}
-            <div class="grid grid-321">
+            <div class="grid grid-221">
             {{#page.posts}}
                 {{> partials.blog.post}}
             {{/page.posts}}

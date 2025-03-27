@@ -1,0 +1,9 @@
+id: rss
+
+queries:
+    posts:
+        contentType: post
+        scope: list
+        orderBy:
+            - key: lastUpdate
+              direction: desc

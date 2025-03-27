@@ -1,25 +1,25 @@
 {{<html}}
 {{$main}}
 
-{{& page.contents}}
+{{& page.contents.html}}
 
 <section class="hero primary">
     <div class="wrapper">
         <picture>
             <source
-                srcset="/images/logos/logo-colorized~dark.png"
+                srcset="{{site.baseUrl}}/images/logos/logo-colorized~dark.png"
                 media="(prefers-color-scheme: dark)"
                 >
             <img
-                src="/images/logos/logo-colorized.png"
-                alt="Logo of {{site.title}}"
-                title="{{site.title}}"
+                src="{{site.baseUrl}}/images/logos/logo-colorized.png"
+                alt="Logo of {{site.name}}"
+                title="{{site.name}}"
                 >
         </picture>
         <p>Binary Birds</p>
-        <h1>Transforming your business dreams into functioning products with top-tier software</h1>
-        <p>We are experts in Swift development for iOS, macOS, and server-side solutions, specializing in backend development and consulting to elevate your projects.</p>
-        <a class="button" href="mailto:info@binarybirds.com">Start a conversation</a>
+        <h1>We believe in Swift</h1>
+        <p>Transforming your business dreams into functioning products<br>using the Swift programming language.</p>
+        <a class="button" href="mailto:info@binarybirds.com">Let's talk</a>
     </div>
 </section>
       
@@ -31,7 +31,7 @@
       </header>
       <div class="grid grid-211">
           <picture>
-            <img alt="Practical Server Side Swift Cover" src="/images/practical-server-side-swift-cover.png"/>
+            <img alt="Practical Server Side Swift Cover" src="{{site.baseUrl}}/images/practical-server-side-swift-cover.png"/>
           </picture>
           
           <div class="info">
@@ -112,7 +112,7 @@
             </header>
             <div class="grid grid-221">
                 <div>
-                    <img src="/images/octocat.png">
+                    <img src="{{site.baseUrl}}/images/octocat.png">
                 </div>
                 <div>
                     <h3>We love open source</h3>
@@ -132,7 +132,7 @@
             </header>
             <div class="grid grid-221">
                 <div>
-                    <img src="/images/toucan.png">
+                    <img src="{{site.baseUrl}}/images/toucan.png">
                 </div>
                 <div>
                     <h3>A modern Static Site Generator</h3>
@@ -144,20 +144,17 @@
         </div>
     </section>
 
-    
-
-
     <section class="team">
         <div class="wrapper">
-        <header>
-            <h2>Who we are</h2>
-            <p>Our team of experts work together as a unit for more than 10 years, which connection will reflect on how we operate in order to move you forward.</p>
-        </header>
-        <div class="grid grid-321">
-            {{#site.context.authors}}
-                {{> partials.blog.member}}
-            {{/site.context.authors}}
-        </div>
+            <header>
+                <h2>Who we are</h2>
+                <p>Our team of experts work together as a unit for more than 10 years, which connection will reflect on how we operate in order to move you forward.</p>
+            </header>
+            <div class="grid grid-321">
+                {{#context.authors}}
+                    {{> partials.blog.member}}
+                {{/context.authors}}
+            </div>
         </div>
     </section>
 
@@ -168,18 +165,9 @@
                 <p>Take a moment to see what our clients are saying about us.</p>
             </header>
             <div class="grid grid-221">
-                <div>
-                    <div class="testimonial-image">
-                        <img src="/images/artur-kovacs.png">
-                    </div>
-                </div>
-                <div>
-                    <div class="testimonial">
-                        <blockquote>I've known the Binary Birds team members for a long time, and working with them has been an absolute pleasure. They are at the top of their game in delivering software, managing digital products and working with clients, consistently demonstrating a great sense of reliability. I highly recommend checking them out.</blockquote>
-                        <h3>Artúr Kovács</h3>
-                        <p>General Manager @ <a href="https://avalliance.com/" target="_blank">AV Alliance</a></p>
-                    </div>
-                </div>
+                {{#context.testimonials}}
+                    {{> partials.testimonial}}
+                {{/context.testimonials}}
             </div>
         </div>
     </section>

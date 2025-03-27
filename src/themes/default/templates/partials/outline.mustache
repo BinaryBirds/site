@@ -1,0 +1,15 @@
+
+{{#empty(page.contents.outline)}}
+{{/empty(page.contents.outline)}}
+{{^empty(page.contents.outline)}}
+<h4>On this page</h4>
+<ul>
+{{#page.contents.outline}}
+    <li class="level-{{level}}">
+        <a href="#{{fragment}}">{{text}}</a>
+        <ul>
+        </ul>
+    </li>
+{{/page.contents.outline}}
+</ul>
+{{/empty(page.contents.outline)}}
