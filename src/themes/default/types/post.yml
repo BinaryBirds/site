@@ -31,24 +31,14 @@ relations:
             direction: asc
 
 queries:
-    prev:
-        contentType: post
-        scope: detail
-        limit: 1
-        orderBy:
-            - key: publication
-              direction: desc
-    next:
-        contentType: post
-        scope: detail
-        limit: 1
-        orderBy:
-            - key: publication
-              direction: desc
     related:
         contentType: post
         limit: 4
         filter:
-            key: tags
-            operator: matching
-            value: "{{tags}}"
+            and:
+                - key: tags
+                  operator: matching
+                  value: "{{tags}}"
+                - key: id
+                  operator: notEquals
+                  value: "{{id}}"

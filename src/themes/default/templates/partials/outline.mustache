@@ -5,12 +5,9 @@
 <h4>On this page</h4>
 <ul>
 {{#page.contents.outline}}
-    <li class="first-level">
+    <li class="level-{{level}}">
         <a href="#{{fragment}}">{{text}}</a>
         <ul>
-        {{#children}}
-            <li><a href="#{{fragment}}">{{text}}</a></li>
-        {{/children}}
         </ul>
     </li>
 {{/page.contents.outline}}

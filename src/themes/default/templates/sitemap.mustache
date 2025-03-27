@@ -1,27 +1,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {{#empty(urls)}}
-    {{/empty(urls)}}
-    {{^empty(urls)}}
     <url>
-        {{#page.pages}}
-            <loc>{{permalink}}</loc>
-            <lastmod>{{lastUpdate.formats.sitemap}}</lastmod>
-        {{/page.pages}}
 
-        {{#page.posts}}
-            <loc>{{permalink}}</loc>
-            <lastmod>{{lastUpdate.formats.sitemap}}</lastmod>
-        {{/page.posts}}
+    {{#context.pages}}
+        <loc>{{permalink}}</loc>
+        <lastmod>{{lastUpdate.formats.sitemap}}</lastmod>
+    {{/context.pages}}
 
-        {{#page.authors}}
-            <loc>{{permalink}}</loc>
-            <lastmod>{{lastUpdate.formats.sitemap}}</lastmod>
-        {{/page.authors}}
+    {{#context.posts}}
+        <loc>{{permalink}}</loc>
+        <lastmod>{{lastUpdate.formats.sitemap}}</lastmod>
+    {{/context.posts}}
 
-        {{#page.tags}}
-            <loc>{{permalink}}</loc>
-            <lastmod>{{lastUpdate.formats.sitemap}}</lastmod>
-        {{/page.tags}}
+    {{#context.authors}}
+        <loc>{{permalink}}</loc>
+        <lastmod>{{lastUpdate.formats.sitemap}}</lastmod>
+    {{/context.authors}}
+
+    {{#context.tags}}
+        <loc>{{permalink}}</loc>
+        <lastmod>{{lastUpdate.formats.sitemap}}</lastmod>
+    {{/context.tags}}
+
     </url>
-    {{/empty(urls)}}
 </urlset>

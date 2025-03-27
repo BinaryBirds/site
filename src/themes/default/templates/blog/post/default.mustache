@@ -6,8 +6,10 @@
         <article>
             <header>
 
+                <div>{{#page.image}}<img class="" src="{{.}}" alt="{{page.title}}">{{/page.image}}</div>
+
                 <div class="meta">
-                    <time datetime="{{page.publication.formats.sitemap}}">{{page.publication.formats.sitemap}}</time>
+                    <time datetime="{{page.publication.formats.iso8601}}">{{page.publication.date.medium}}</time>
                     {{#page.contents.readingTime}} &middot; <span class="reading-time">{{.}} min read</span>{{/page.contents.readingTime}}
                 </div>
                 

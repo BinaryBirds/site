@@ -1,42 +1,21 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 <channel>
     <title>Binary Birds</title>
-    <description>Server-side Swift development and consulting. Secure, efficient, scalable solutions.</description>
-    <link>http://127.0.0.1:3000</link>
+    <description>We believe in Swift</description>
+    <link>https://binarybirds.com</link>
     <language>en-US</language>
-    <lastBuildDate>Thu, 13 Mar 2025 15:10:35 +0000</lastBuildDate>
-    <pubDate>Thu, 13 Mar 2025 15:10:35 +0000</pubDate>
+    <lastBuildDate>Thu, 27 Mar 2025 11:08:06 +0000</lastBuildDate>
+    <pubDate>Thu, 27 Mar 2025 11:01:31 +0000</pubDate>
     <ttl>250</ttl>
-    <atom:link href="http://127.0.0.1:3000/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://binarybirds.com/rss.xml" rel="self" type="application/rss+xml"/>
 
-        <item>
-            <guid isPermaLink="true">http://127.0.0.1:3000/blog/beginners-guide-to-swift-macros/</guid>
-            <title><![CDATA[ Beginner&#39;s guide to Swift macros ]]></title>
-            <description><![CDATA[ Learn how to create and publish your very first macro using SPM and the brand new Macro APIs introduced in Swift 5.9. ]]></description>
-            <link>http://127.0.0.1:3000/blog/beginners-guide-to-swift-macros/</link>
-            <pubDate>Wed, 07 Jun 2023 12:57:12 +0000</pubDate>
-        </item>
-        <item>
-            <guid isPermaLink="true">http://127.0.0.1:3000/blog/how-to-write-openapi-specs-using-swift-and-openapi-kit/</guid>
-            <title><![CDATA[ How to write OpenAPI specs using Swift and OpenAPIKit? ]]></title>
-            <description><![CDATA[ In this tutorial I&#39;ll show you how to build OpenAPI 3.0+ specifications efficiently using Swift &amp; OpenAPIKit. ]]></description>
-            <link>http://127.0.0.1:3000/blog/how-to-write-openapi-specs-using-swift-and-openapi-kit/</link>
-            <pubDate>Thu, 06 Jul 2023 14:15:54 +0000</pubDate>
-        </item>
-        <item>
-            <guid isPermaLink="true">http://127.0.0.1:3000/blog/push-notifications-with-swift-server-side/</guid>
-            <title><![CDATA[ Sending push notifications using server side Swift in 2023 ]]></title>
-            <description><![CDATA[ Learn how to send push notifications with Swift on the server side using the Google FCM API and the APN Swift library. ]]></description>
-            <link>http://127.0.0.1:3000/blog/push-notifications-with-swift-server-side/</link>
-            <pubDate>Thu, 18 May 2023 15:36:12 +0000</pubDate>
-        </item>
-        <item>
-            <guid isPermaLink="true">http://127.0.0.1:3000/blog/static-site-generation-with-the-power-of-swift-and-toucan/</guid>
-            <title><![CDATA[ Static site geneneration with the power of Swift and Toucan ]]></title>
-            <description><![CDATA[ Toucan is a lightweight static site generator written in Swift. This article will guide you through the process of creating your own website using it. ]]></description>
-            <link>http://127.0.0.1:3000/blog/static-site-generation-with-the-power-of-swift-and-toucan/</link>
-            <pubDate>Mon, 24 Apr 2023 16:32:25 +0000</pubDate>
-        </item>
+<item>
+    <guid isPermaLink="true">https://binarybirds.com/blog/transitioning-to-story-points-based-estimation-and-planning-from-time-based/</guid>
+    <title><![CDATA[ Transitioning to Story Points based estimation and planning from time based ]]></title>
+    <description><![CDATA[ Switching to a Story Points-based task management system can help teams work more smoothly. Here’s our story. ]]></description>
+    <link>https://binarybirds.com/blog/transitioning-to-story-points-based-estimation-and-planning-from-time-based/</link>
+    <pubDate>Fri, 23 May 2025 14:00:00 +0000</pubDate>
+</item>
 
 </channel>
 </rss>
