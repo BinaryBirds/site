@@ -26,6 +26,11 @@ queries:
             - key: lastUpdate
               direction: desc
 
+iterators:
+    post.pagination:
+        contentType: post
+        limit: 24
+
 contentTypes: 
     include:
         - sitemap
