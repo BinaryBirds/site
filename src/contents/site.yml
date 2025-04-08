@@ -1,5 +1,5 @@
 baseUrl: "https://binarybirds.com/"
-language: "en-US"
+locale: "en-US"
 name: "Binary Birds"
 description: "We believe in Swift"
 navigation:
