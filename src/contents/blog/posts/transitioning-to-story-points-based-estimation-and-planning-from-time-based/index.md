@@ -2,7 +2,7 @@
 type: post
 title: "Transitioning to Story Points based estimation and planning from time based"
 description: "Switching to a Story Points-based task management system can help teams work more smoothly. Here’s our story."
-publication: "2025-05-23 14:00:00"
+publication: "2025-03-23 14:00:00"
 tags:
   - project-management
 authors:
