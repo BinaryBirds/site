@@ -2,7 +2,7 @@
 type: post
 title: "Swift in business"
 description: "Why choose Swift as a development language for your project or business?"
-publication: "2025-05-15 16:00:00"
+publication: "2025-05-19 13:00:00"
 tags:
   - swift
 authors:
