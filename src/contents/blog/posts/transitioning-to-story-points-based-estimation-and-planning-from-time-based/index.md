@@ -7,9 +7,8 @@ tags:
   - project-management
 authors:
   - andras-sipos
-featured: true
+featured: false
 ---
-
 
 ## About the past
 
