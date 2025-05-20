@@ -4,11 +4,18 @@
     <description>We believe in Swift</description>
     <link>https://binarybirds.com</link>
     <language>en-US</language>
-    <lastBuildDate>Tue, 20 May 2025 13:17:30 +0000</lastBuildDate>
-    <pubDate>Tue, 20 May 2025 12:45:20 +0000</pubDate>
+    <lastBuildDate>Tue, 20 May 2025 13:19:16 +0000</lastBuildDate>
+    <pubDate>Tue, 20 May 2025 13:18:37 +0000</pubDate>
     <ttl>250</ttl>
     <atom:link href="https://binarybirds.com/rss.xml" rel="self" type="application/rss+xml"/>
 
+<item>
+    <guid isPermaLink="true">https://binarybirds.com/blog/swift-in-business/</guid>
+    <title><![CDATA[ Swift in business ]]></title>
+    <description><![CDATA[ Why choose Swift as a development language for your project or business? ]]></description>
+    <link>https://binarybirds.com/blog/swift-in-business/</link>
+    <pubDate>Mon, 19 May 2025 13:00:00 +0000</pubDate>
+</item>
 <item>
     <guid isPermaLink="true">https://binarybirds.com/blog/transitioning-to-story-points-based-estimation-and-planning-from-time-based/</guid>
     <title><![CDATA[ Transitioning to Story Points based estimation and planning from time based ]]></title>
