@@ -75,12 +75,16 @@ contentTypes:
         - author
         - tag
         - post
-        - testimonial
+        - testimonial    
 
 iterators:
     post.pagination:
         contentType: post
+        scope: detail
         limit: 24
+        orderBy:
+            - key: publication
+              direction: desc
 
 transformers:
 
