@@ -2,7 +2,9 @@ name: Build and Deploy with Toucan
 
 on:
   push:
-    branches: [main]
+    tags:
+      - 'v*'
+      - '[0-9]*'
 
 jobs:
   call-toucan-workflow:
