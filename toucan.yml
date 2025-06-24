@@ -1,0 +1,6 @@
+targets:
+    - name: dev 
+      default: true
+
+    - name: live
+      url: "https://binarybirds.com/"
