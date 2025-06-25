@@ -1,5 +1,5 @@
 name: "binarybirds.com website"
-description: "Source code of the binarybirds.com site."
+description: "Public website of binarybirds.com"
 url: "https://github.com/BinaryBirds/site"
 version: "1.0.0-beta.5"
 generatorVersions:
@@ -7,10 +7,6 @@ generatorVersions:
 
 demo:
     url: "https://binarybirds.com/"
-
-authors:
-    - name: "Binary Birds Kft."
-      url: "https://binarybirds.com/"
 
 license:
     name: "MIT license"
