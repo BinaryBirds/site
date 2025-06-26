@@ -21,6 +21,9 @@ properties:
     priority:
         type: int
         required: true
+    image:
+        type: asset
+        required: false
 
 relations:
 
