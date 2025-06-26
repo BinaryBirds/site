@@ -1,0 +1,32 @@
+<div class="card post">
+    {{#featured}}
+    <span class="featured">featured</span>
+    {{/featured}}
+    <div class="author-list">
+        {{#authors}}
+            <a href="{{permalink}}">
+            {{#image}}<img class="small rounded" src="{{image}}" alt="{{title}}">{{/image}}
+            </a>
+        {{/authors}}
+    </div>
+
+    
+
+    <div class="meta">
+        <time datetime="{{publication.iso8601}}">{{publication.date.short}}</time>
+        {{#contents.readingTime}} 
+            &middot; <span class="reading-time">{{.}} min read</span>
+        {{/contents.readingTime}}
+    </div>
+    
+    <div>{{#image}}<img class="" src="{{.}}" alt="{{title}}">{{/image}}</div>
+    <h3><a href="{{permalink}}">{{title}}</a></h3>
+    <p>{{description}}</p>
+    
+    
+    <div class="tag-list">
+        {{#tags}}
+            <a href="{{permalink}}"><small>{{title}}</small></a>
+        {{/tags}}
+    </div>
+</div>

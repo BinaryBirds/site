@@ -1,0 +1,12 @@
+name: "Binary Birds"
+description: "We believe in Swift"
+language: "en-US"
+navigation:
+    - label: "Development"
+      url: "/development/"
+    - label: "Consulting"
+      url: "/consulting/"
+    - label: "Blog"
+      url: "/blog/"
+    - label: "Contact"
+      url: "/contact/"

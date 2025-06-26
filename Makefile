@@ -1,11 +1,8 @@
 dev:
-	toucan generate ./src ./docs --base-url http://localhost:3000/
-
-dist:
-	toucan generate ./src ./docs
+	toucan generate .
 
 watch:
-	toucan watch ./src ./docs --base-url http://localhost:3000/
+	toucan watch .
 
 serve:
-	toucan serve ./docs -p 3000
+	toucan serve ./dist -p 3000
