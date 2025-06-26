@@ -9,6 +9,8 @@ on:
 jobs:
   deploy-page:
     uses: toucansites/github-workflows/.github/workflows/deploy.yml@main
+    with:
+      target: "live"
     permissions:
       contents: read
       pages: write

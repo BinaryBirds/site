@@ -3,4 +3,5 @@ targets:
       default: true
 
     - name: live
+      output: /tmp/output
       url: "https://binarybirds.com/"
