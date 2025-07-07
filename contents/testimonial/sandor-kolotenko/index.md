@@ -6,6 +6,6 @@ text: From high-net-worth fintech to luxury retail and world-class sporting even
 company: AppBakery
 company-url: https://www.appbakery.ee/
 image: ./assets/sandor-kolotenko.jpg
-priority: 2
+priority: 3
 ---
 

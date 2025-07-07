@@ -6,7 +6,7 @@ text: I’ve been working with Tibor and the team at Binary Birds for more than 
 company: ITG Commerce
 company-url: https://www.linkedin.com/company/itgcommerce/
 image: ./assets/stephen-stark.jpg
-priority: 3
+priority: 5
 ---
 
 
