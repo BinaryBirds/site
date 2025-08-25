@@ -3,6 +3,9 @@ paths:
     - blog/tags
 
 properties:
+    title:
+        type: string
+        required: true
     order:
         type: int
         required: true
