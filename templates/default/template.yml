@@ -2,17 +2,13 @@ name: "binarybirds.com website"
 description: "Public website of binarybirds.com"
 url: "https://github.com/BinaryBirds/site"
 version: "1.0.0-beta.5"
-generatorVersions:
-    - "1.0.0-beta.5"
-    - "1.0.0-beta.6"
-
+generatorVersion:
+    value: "1.0.0-beta.6"
 demo:
     url: "https://binarybirds.com/"
-
 license:
     name: "MIT license"
     url: "https://github.com/BinaryBirds/site?tab=MIT-1-ov-file"
-
 tags:
     - "binarybirds"
     - "site"
