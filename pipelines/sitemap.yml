@@ -8,30 +8,6 @@ queries:
         orderBy:
             - key: lastUpdate
               direction: desc
-    posts:
-        contentType: post
-        scope: list
-        orderBy:
-            - key: lastUpdate
-              direction: desc
-    authors:
-        contentType: author
-        scope: list
-        orderBy:
-            - key: lastUpdate
-              direction: desc
-    tags:
-        contentType: tag
-        scope: list
-        orderBy:
-            - key: lastUpdate
-              direction: desc
-
-iterators:
-    post.pagination:
-        contentType: post
-        limit: 24
-
 contentTypes: 
     include:
         - sitemap

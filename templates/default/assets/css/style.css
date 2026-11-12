@@ -7,6 +7,16 @@ body {
     font-style: normal;
     line-height: 1.5rem;
 }
+::selection {
+    background: var(--link-color);
+    color: #fff;
+    text-shadow: none;
+}
+@media (prefers-color-scheme: dark) {
+    ::selection {
+        color: #000;
+    }
+}
 img.small {
     width: 30px;
 }
@@ -66,6 +76,37 @@ a.button:hover {
 main > section.primary {
     background: var(--background-color);
 }
+main > section.home-black {
+    background: #000;
+    color: #f0f0f0;
+}
+main > section.home-gray {
+    background: #262626;
+    color: #f0f0f0;
+}
+main > section.home-black p,
+main > section.home-gray p {
+    color: #bdbdbd;
+}
+main > section.home-black header p,
+main > section.home-gray header p {
+    color: #bdbdbd;
+}
+main > section.home-black a:link,
+main > section.home-gray a:link,
+main > section.home-black a:visited,
+main > section.home-gray a:visited {
+    color: #aaa8ff;
+}
+main > section.home-black a.button,
+main > section.home-gray a.button {
+    color: #fff;
+}
+main > section.home-black .card,
+main > section.home-gray .card {
+    background: #171717;
+    border-color: #3a3a3a;
+}
 main > section header, .hero {
     text-align: center;
 }
@@ -117,6 +158,17 @@ main > section header p {
     padding: 15px;
     border-radius: 10px;
     border: 1px solid var(--background-color-2);
+}
+.tool-card {
+    display: flex;
+    flex-direction: column;
+}
+.tool-card > p:last-child {
+    margin-top: auto;
+    padding-top: 15px;
+}
+.home-card-grid {
+    margin-bottom: 60px;
 }
 .card.post h3 {
     margin-top: 0;
@@ -189,10 +241,19 @@ section.primary .card {
     background: var(--background-color-1);
 }
 
-header svg, .card svg {
-    width: 45px;
-    height: 45px;
+header > svg, .card > svg {
+    display: block;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    aspect-ratio: 1;
     color: var(--link-color);
+}
+main > section header > svg {
+    margin: 0 auto 15px;
+}
+main > section .card > svg {
+    margin-bottom: 15px;
 }
 
 .testimonial {

@@ -25,37 +25,6 @@ assets:
                 ext: "jpg"
 
 queries: 
-    posts:
-        contentType: post
-        scope: list
-        limit: 12
-        orderBy:
-            - key: publication
-              direction: desc
-    featured:
-        contentType: post
-        scope: list
-        filter:
-            key: featured
-            operator: equals
-            value: true
-        orderBy:
-            - key: publication
-              direction: desc
-    authors:
-        contentType: author
-        scope: list
-        limit: 12
-        orderBy:
-            - key: title
-              direction: asc
-    tags:
-        contentType: tag
-        scope: list
-        limit: 12
-        orderBy:
-            - key: title
-              direction: asc
     testimonials:
         contentType: testimonial
         scope: list
@@ -75,19 +44,7 @@ dataTypes:
 contentTypes: 
     include:
         - page
-        - author
-        - tag
-        - post
         - testimonial    
-
-iterators:
-    post.pagination:
-        contentType: post
-        scope: detail
-        limit: 24
-        orderBy:
-            - key: publication
-              direction: desc
 
 transformers:
 
@@ -97,12 +54,6 @@ engine:
         contentTypes: 
             page:
                 view: "pages.default"
-            author:
-                view: "blog.author.default"
-            tag:
-                view: "blog.tag.default"
-            post:
-                view: "blog.post.default"
 output:
     path: "{{slug}}"
     file: index
