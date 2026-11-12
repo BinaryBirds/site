@@ -6,7 +6,5 @@ navigation:
       url: "/development/"
     - label: "Consulting"
       url: "/consulting/"
-    - label: "Blog"
-      url: "/blog/"
     - label: "Contact"
       url: "/contact/"
