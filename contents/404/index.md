@@ -1,18 +1,12 @@
 ---
-title: Not found
-description: Page not found
+title: Page not found
+description: We couldn't find that page.
 type: not-found
 noindex: true
 ---
 
-# 404
+# Page not found
 
-Not found.
+The page you’re looking for may have moved or no longer exist.
 
-```swift
-func notFound() -> Int {
-    return 404
-}
-```
-
-This page does not exists.
+[Return to the homepage](/)
