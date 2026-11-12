@@ -159,6 +159,17 @@ main > section header p {
     border-radius: 10px;
     border: 1px solid var(--background-color-2);
 }
+.tool-card {
+    display: flex;
+    flex-direction: column;
+}
+.tool-card > p:last-child {
+    margin-top: auto;
+    padding-top: 15px;
+}
+.home-card-grid {
+    margin-bottom: 60px;
+}
 .card.post h3 {
     margin-top: 0;
 }
@@ -230,10 +241,19 @@ section.primary .card {
     background: var(--background-color-1);
 }
 
-header svg, .card svg {
-    width: 45px;
-    height: 45px;
+header > svg, .card > svg {
+    display: block;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    aspect-ratio: 1;
     color: var(--link-color);
+}
+main > section header > svg {
+    margin: 0 auto 15px;
+}
+main > section .card > svg {
+    margin-bottom: 15px;
 }
 
 .testimonial {
