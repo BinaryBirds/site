@@ -2,6 +2,7 @@
 title: Not found
 description: Page not found
 type: not-found
+noindex: true
 ---
 
 # 404

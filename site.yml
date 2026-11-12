@@ -1,6 +1,3 @@
 name: "Binary Birds"
 description: "We believe in Swift"
 language: "en-US"
-navigation:
-    - label: "Contact"
-      url: "/contact/"
